@@ -1,0 +1,138 @@
+@import 'reset.css';
+
+body {
+	background: #09C9D8;
+	font-family: 'Arimo', sans-serif;
+	font-size: 15px;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+header {
+	display: block;
+	border-bottom: 1px solid #fff;
+	/*padding-bottom: 10px;*/
+}
+img{
+	max-width: 100%;
+	vertical-align: bottom;
+} 
+
+.grid {
+	display: table;
+}
+.grid-row {
+	display: table-row;
+}
+.grid-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.clearfix:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+.rfloat {
+	float: right;
+}
+.lfloat {
+	float: left;
+}
+.content-wrap {
+	/*width: 100%;*/
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.fb:hover::before,.tw:hover::before,.gp:hover::before,.em:hover::before,.map:hover::before,.phone:hover::before {
+	/*background: rgba(9,201,216,0.1);*/
+	background: rgba(255,255,255,0.5);
+	color: #0092BB;
+
+}
+.fb:before,.tw:before,.gp:before,.em:before, .map:before, .phone:before, .connect .fa-phone {
+	margin-left: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	line-height:35px;
+	overflow: hidden;
+	/*background: #fff;*/
+	border-radius: 50%;
+	color: #fff 	;
+	cursor: pointer;
+	font-weight: bold;
+	vertical-align: middle;
+	border: 2px solid #fff;
+}
+.connect .fa-phone{
+	margin-right: 10px;
+	cursor: auto;
+}
+.connect {
+	color: #fff;
+	padding-top:10px;
+}
+header .grid.lfloat {
+	width: 58%;
+}
+header .content-wrap {
+	padding:0  10px;
+}
+.logo {
+	font-size: 45px;
+	color: #fff;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+.nav-link {
+	text-align: center;
+}
+.nav-link li{
+	display: inline-block;
+	width: 20%;
+}
+.nav-link li a{
+	display: block;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+	padding: 7px;
+}
+.nav-link li a:hover{
+	background: #fff;
+	color: #333;
+}
+.banner {
+	background: #fff;
+}
+.page-content {
+	background: #fff;
+	padding: 20px;
+	max-width: 1160px;
+}
+.page-content h1 {
+	padding: 20px;
+	text-align: center;
+    font-size: 48px;
+    color: #444;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.page-content h4 {
+	text-align: center;
+    font-size: 24px;
+    color: #2fadbb;
+    line-height: 36px;
+    font-weight: normal;
+    margin: 0 auto 30px auto;
+    font-weight: bold;
+    width: 70%;
+    min-width: 200px;
+}
+.page-content p {
+	padding: 0 20px;
+}
