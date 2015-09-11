@@ -2,21 +2,24 @@
 
 body {
 	background: #09C9D8;
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	line-height: 1em;
 	margin: 0;
 	padding: 0;
+	color: #333;
 }
 header {
 	display: block;
 	border-bottom: 1px solid #fff;
-	/*padding-bottom: 10px;*/
 }
-img{
+
+img {
 	max-width: 100%;
 	vertical-align: bottom;
+	outline: none 0;
 } 
+
 
 .grid {
 	display: table;
@@ -28,7 +31,8 @@ img{
 	display: table-cell;
 	vertical-align: middle;
 }
-.clearfix:after{
+
+.clearfix:after {
 	clear: both;
 	display: block;
 	content: "";
@@ -40,14 +44,11 @@ img{
 	float: left;
 }
 .content-wrap {
-	/*width: 100%;*/
 	max-width: 1200px;
 	margin: 0 auto;
-
 }
 
 .fb:hover::before,.tw:hover::before,.gp:hover::before,.em:hover::before,.map:hover::before,.phone:hover::before {
-	/*background: rgba(9,201,216,0.1);*/
 	background: rgba(255,255,255,0.5);
 	color: #0092BB;
 
@@ -60,7 +61,6 @@ img{
 	height: 35px;
 	line-height:35px;
 	overflow: hidden;
-	/*background: #fff;*/
 	border-radius: 50%;
 	color: #fff 	;
 	cursor: pointer;
@@ -68,16 +68,19 @@ img{
 	vertical-align: middle;
 	border: 2px solid #fff;
 }
-.connect .fa-phone{
+
+.connect .fa-phone {
 	margin-right: 10px;
 	cursor: auto;
 }
 .connect {
 	color: #fff;
-	padding-top:10px;
+	/*padding-top: 25px;*/
+	text-align: right;
 }
-header .grid.lfloat {
-	width: 58%;
+
+header .grid {
+	width: 100%;
 }
 header .content-wrap {
 	padding:0  10px;
@@ -90,30 +93,94 @@ header .content-wrap {
 .nav-link {
 	text-align: center;
 }
-.nav-link li{
+
+.nav-link li {
 	display: inline-block;
-	width: 20%;
+	width: 100px;
 }
-.nav-link li a{
+
+.nav-link li a {
 	display: block;
 	line-height: 50px;
 	text-decoration: none;
 	color: #fff;
 	padding: 7px;
 }
-.nav-link li a:hover{
+
+.nav-link li a:hover {
 	background: #fff;
 	color: #333;
 }
 .banner {
 	background: #fff;
+	text-align: center;
+	box-shadow: 0px 3px 10px 1px #00AAB7; 
 }
 .page-content {
 	background: #fff;
-	padding: 20px;
-	max-width: 1160px;
 }
-.page-content h1 {
+
+.page-content .grid-cell {
+	padding: 20px 0;
+}
+
+.rnewsletter h5 {
+	font-size: 24px;
+}
+
+.rnewsletter .grid-cell:nth-child(even) {
+	padding-right: 10px;
+}
+
+.rnewsletter .grid-cell {
+	padding: 10px 0px 10px 10px;
+	text-align: left;
+}
+
+.rnewsletter {
+	border-left: 1px solid #2fadbb;
+	border-right: 1px solid #fff;
+	min-width: 250px;
+	padding-right: 20px;
+	background: #09C9D8;
+	color: #fff;
+	vertical-align: top;
+	padding-bottom: 40px;
+	position: relative;
+	text-align: center;
+}
+
+.rnewsletter button:hover {
+	background: #DBFCFF;
+}
+
+.rnewsletter button {
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	cursor: pointer;
+	border-radius: 4px;
+	/*position: absolute;*/
+	bottom: 15px;
+}
+
+.rnewsletter form {
+	display: table;
+	border-top: 1px solid #2fadbb;
+	border-bottom: 1px solid #2fadbb;
+	padding: 15px 0;
+	margin: 15px 0 35px 0;
+}
+
+.content-text {
+	padding-left: 20px;
+	border-top: 4px double #09C9D8;
+}
+
+.content-text h1 {
 	padding: 20px;
 	text-align: center;
     font-size: 48px;
@@ -122,17 +189,53 @@ header .content-wrap {
     margin: 0 0 10px 0;
     font-weight: bold;
 }
-.page-content h4 {
-	text-align: center;
+
+.content-text h4 {
     font-size: 24px;
     color: #2fadbb;
     line-height: 36px;
     font-weight: normal;
-    margin: 0 auto 30px auto;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 20px;
+	margin: 0 0 30px 20px;
     font-weight: bold;
-    width: 70%;
     min-width: 200px;
 }
-.page-content p {
-	padding: 0 20px;
+
+.content-text p {
+	padding: 0 20px 0 40px;
+}
+
+.page-services {
+	background: #09C9D8;
+	width: 100%;
+}
+
+.page-services .slide-wrapper .grid {
+	width: 25%;
+	float: left;
+}
+
+.page-services .grid-cell b {
+	line-height: 1.4em;
+}
+
+.page-services .grid-cell p {
+	color: #fff;
+}
+
+.page-services .grid-cell img {
+	background: #efefef;
+	border: 0 none;
+	border: 1px solid #CB080C;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.page-services .grid-cell {
+	width: 18%;
+	padding: 3% 1%;
+	text-align: center;
 }
