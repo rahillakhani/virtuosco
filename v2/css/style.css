@@ -294,6 +294,7 @@ footer .grid.content-wrap{
 footer {
 	color: #FFF;
 	font-size: 0.9em;
+	border-top: 1px solid #fff;
 }
 footer a:hover {
 	color: #D1EEF7;
