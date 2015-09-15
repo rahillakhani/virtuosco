@@ -288,19 +288,21 @@ header .content-wrap {
 	float: left;
 }
 
-footer.content-wrap {
+footer .grid.content-wrap{
 	width: 100%;
+	}
+footer {
 	color: #FFF;
 	font-size: 0.9em;
 }
-footer.content-wrap a:hover {
+footer a:hover {
 	color: #D1EEF7;
 }
-footer.content-wrap a{
+footer a{
 	color: #FFF;
 	text-decoration: none;
 }
-footer.content-wrap .nav-link li a:hover{
+footer .nav-link li a:hover{
 	color: #0092BB;
 }
 footer.content-wrap .nav-link li{
