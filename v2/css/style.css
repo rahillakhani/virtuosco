@@ -109,7 +109,8 @@ header .content-wrap {
 
 .nav-link li a:hover {
 	background: #fff;
-	color: #333;
+	color: #006F77;
+	color: #0092BB;
 }
 .banner {
 	background: #fff;
@@ -132,6 +133,10 @@ header .content-wrap {
 	padding-right: 10px;
 }
 
+.rnewsletter .grid-cell input[type='text']{
+	padding: 4px;
+	color: #00647F;
+}
 .rnewsletter .grid-cell {
 	padding: 10px 0px 10px 10px;
 	text-align: left;
@@ -165,6 +170,8 @@ header .content-wrap {
 	border-radius: 4px;
 	/*position: absolute;*/
 	bottom: 15px;
+	font-size: 15px;
+	color: #00647F;
 }
 
 .rnewsletter form {
@@ -210,6 +217,8 @@ header .content-wrap {
 .page-services {
 	background: #09C9D8;
 	width: 100%;
+	border-top: 2px solid #fff;
+	/*border-bottom: 2px solid #fff;*/
 }
 
 .page-services .grid-cell b {
@@ -235,6 +244,11 @@ header .content-wrap {
 	text-align: center;
 }
 
+.page-map {
+	min-height: 240px;
+	padding: 5px;
+	background: #fff;
+}
 
 
 
@@ -271,5 +285,24 @@ header .content-wrap {
 	width: 20px;
 }
 .service-ticker #owl-demo {
+	float: left;
+}
+
+footer.content-wrap {
+	width: 100%;
+	color: #FFF;
+	font-size: 0.9em;
+}
+footer.content-wrap a:hover {
+	color: #D1EEF7;
+}
+footer.content-wrap a{
+	color: #FFF;
+	text-decoration: none;
+}
+footer.content-wrap .nav-link li a:hover{
+	color: #0092BB;
+}
+footer.content-wrap .nav-link li{
 	float: left;
 }
