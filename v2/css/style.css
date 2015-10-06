@@ -1,7 +1,7 @@
 @import 'reset.css';
-
+@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
 body {
-	background: #09C9D8;
+	/*background: #088CC0;*/
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	line-height: 1em;
@@ -57,14 +57,14 @@ img {
 	margin-left: 10px;
 	display: inline-block;
 	text-align: center;
-	width: 35px;
-	height: 35px;
-	line-height:35px;
+	width: 30px;
+	height: 30px;
+	line-height:30px;
 	overflow: hidden;
 	border-radius: 50%;
 	color: #fff 	;
 	cursor: pointer;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	vertical-align: middle;
 	border: 2px solid #fff;
 }
@@ -76,9 +76,14 @@ img {
 .connect {
 	color: #fff;
 	/*padding-top: 25px;*/
+	background: #088CC0;
+	/*background: #088CC0;*/
+	padding: 5px 0;
+	font-size: 14px;
+}
+.tright {
 	text-align: right;
 }
-
 header .grid {
 	width: 100%;
 }
@@ -87,12 +92,17 @@ header .content-wrap {
 }
 .logo {
 	font-size: 45px;
-	color: #fff;
+	/*color: #fff;*/
 	font-family: 'Pathway Gothic One', sans-serif;
 }
-.nav-link {
-	text-align: center;
+.logo img {
+	display: inline-block;
+	line-height: 0;
+	vertical-align: middle;
 }
+/*.nav-link {
+	text-align: center;
+}*/
 
 .nav-link li {
 	display: inline-block;
@@ -103,14 +113,17 @@ header .content-wrap {
 	display: block;
 	line-height: 50px;
 	text-decoration: none;
-	color: #fff;
+	/*color: #fff;*/
 	padding: 7px;
+	color: #088CC0;
+	text-align: center;
 }
 
 .nav-link li a:hover {
-	background: #fff;
-	color: #006F77;
-	color: #0092BB;
+	background: #088CC0;
+	/*color: #006F77;*/
+	/*color: #0092BB;*/
+	color: #fff;
 }
 .banner *{
 	border: none 0 !important;
@@ -118,15 +131,17 @@ header .content-wrap {
 .banner {
 	background: #fff;
 	text-align: center;
-	box-shadow: 0px 3px 10px 1px #00AAB7; 
+	box-shadow: 0px -3px 10px -5px #00AAB7;
+	border-bottom: 4px double #cdcdcd;
 	color: #fff;
 }
 .page-content {
-	background: #fff;
+/*	border-left: 1px solid #088CC0;
+	border-right: 1px solid #088CC0;*/
 }
 
 .page-content .grid-cell {
-	padding: 20px 0;
+	padding: 20px 0 20px 0;
 }
 
 .rnewsletter h5 {
@@ -151,7 +166,7 @@ header .content-wrap {
 	border-right: 1px solid #fff;
 	min-width: 250px;
 	padding-right: 20px;
-	background: #09C9D8;
+	background: #088CC0;
 	color: #fff;
 	vertical-align: top;
 	padding-bottom: 40px;
@@ -188,7 +203,8 @@ header .content-wrap {
 
 .content-text {
 	padding-left: 20px;
-	border-top: 4px double #09C9D8;
+	/*border-top: 4px double #088CC0;*/
+	vertical-align: top;
 }
 
 .content-text h1 {
@@ -203,23 +219,66 @@ header .content-wrap {
 
 .content-text h4 {
     font-size: 24px;
-    color: #2fadbb;
+    color: #666666;
     line-height: 36px;
     font-weight: normal;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	border-bottom: 4px double #cdcdcd;
 	padding: 20px;
-	margin: 0 0 30px 20px;
+	margin: 10px auto 50px auto;
     font-weight: bold;
     min-width: 200px;
+    display: table;
 }
-
-.content-text p {
-	padding: 0 20px 0 40px;
+.service-box {
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 311px;
 }
+.service-box a:hover{
+	background: #CEF6FE;
+	border: 1px solid #00D3FF;
+}
+.service-box a:hover figure img{
+	width: 110px;
+}
+.service-box a:hover p{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.service-box a{
+	display: table-cell;
+	width: 30%;
+	padding: 10px 20px;
+	border: 1px solid #cdcdcd;
+	/*display: block;*/
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+}
+.service-box a b{
+	font-size: 1.2em;
+	line-height: 3em;
+	font-family: 'Raleway'
+}
+.service-box a p{
+	text-align: left;
+	padding: 10px 25px;
+    line-height: 1.4em;
 
+}
+.service-box a figure {
+	display: block;
+	/*background: #fff;*/
+	text-align: center;
+	margin: 0;
+}
+.service-box a figure img{
+	width: 100px;
+}
 .page-services {
-	background: #09C9D8;
+	background: #088CC0;
 	width: 100%;
 	border-top: 2px solid #fff;
 	/*border-bottom: 2px solid #fff;*/
@@ -248,6 +307,26 @@ header .content-wrap {
 	text-align: center;
 }
 
+.know-more {
+	background: #f7f7f7;
+	margin: 20px 0 40px 0;
+}
+.know-more button:hover{
+	background: #41D7DD;
+}
+.know-more button{
+	cursor: pointer;
+	color: #fff;
+	padding: 12px 20px;
+	border: 1px solid #cdcdcd;
+	font-size: 0.7em;
+	background: #088CC0;
+}
+.know-more {
+	font-size: 1.4em;
+	padding: 2em;
+	text-align: center;
+}
 .page-map {
 	min-height: 240px;
 	padding: 5px;

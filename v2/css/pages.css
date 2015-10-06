@@ -1,5 +1,37 @@
+@import 'style.css';
+
 .page-header {
-	background: #41D7DD;
+	display: block;
+	background: rgba(255,255,255,0.5);
+}
+.page-header h1{
 	padding: 30px;
-	
+	margin: 0;
+	text-align: left;
+    font-size: 40px;
+    color: #037696;
+    line-height: 1em;
+}
+.innerpage-content p {
+    padding: 0 20px 0 40px;
+}
+.innerpage-content h2 {
+	font-size: 24px;
+    color: #2fadbb;
+    line-height: 36px;
+    font-weight: normal;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 20px ;
+    margin: 30px 0 30px 20px;
+    font-weight: bold;
+    min-width: 200px;
+}
+.page-content.content-wrap,
+.page-header .content-wrap
+{
+	max-width: 1100px;
+}
+.collapsible {
+	overflow: hidden;
 }
