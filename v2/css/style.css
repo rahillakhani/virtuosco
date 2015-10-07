@@ -347,6 +347,9 @@ header .content-wrap {
 	padding: 30px 10px;
 	text-align: center;
 }
+.page-services .grid-cell.image {
+	padding-bottom: 0;
+}
 
 .know-more {
 	background: #f7f7f7;
@@ -359,7 +362,7 @@ header .content-wrap {
 	cursor: pointer;
 	color: #fff;
 	padding: 12px 20px;
-	border: 1px solid #cdcdcd;
+	border: 1px solid ;
 	font-size: 0.7em;
 	background: #088CC0;
 }
@@ -368,9 +371,92 @@ header .content-wrap {
 	padding: 2em;
 	text-align: center;
 }
+
+
+.in-touch {
+	background: #f7f7f7;
+	padding: 20px;
+	margin-top: 47px;
+}
+.in-touch h4{
+    font-size: 24px;
+    color: #666666;
+    line-height: 36px;
+    font-weight: normal;
+	border-bottom: 4px double #cdcdcd;
+	padding: 10px;
+	margin: 10px auto 50px auto;
+    font-weight: bold;
+    min-width: 200px;
+   	display: table;
+	width: 30%;
+	text-align: center;
+}
+.in-touch .grid{
+	width: 500px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.in-touch .text .grid-cell{
+	padding: 10px;
+	font-variant: small-caps;
+	font-size: 1.1em;
+	}
+.in-touch .textarea .grid-cell {
+	padding: 20px 10px;
+}
+.in-touch .textarea .text .grid-cell {
+	padding-bottom: 0;
+}
+.in-touch .textarea .grid-cell input,
+.in-touch .textarea .grid-cell textarea,
+.in-touch .input .grid-cell input{
+	width: 80%;
+	line-height: 2em;
+	padding: 5px;
+	text-align: center;
+	border-color: #efefef !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	font-family: 'Raleway';
+
+}
+.in-touch .textarea .grid-cell input,
+.in-touch .textarea .grid-cell textarea {
+	width: 90%;
+    resize: none;
+}
+.in-touch .textarea .grid-cell textarea {
+	text-align: left;}
+
+.in-touch .textarea .grid-cell button:hover{
+	background: #41D7DD;
+}
+.in-touch .textarea .grid-cell button{
+	cursor: pointer;
+	color: #fff;
+	padding: 12px 20px;
+	border: 1px solid ;
+	font-size: 1em;
+	background: #088CC0;
+	min-width: 150px;
+	font-variant: small-caps;
+}
+.in-touch .input .grid-cell{
+	padding: 10px;
+}
+.in-touch .grid-cell{
+	vertical-align: middle;
+	text-align: center;
+}
+.two-col .grid-cell{
+	width: 50%;	
+}
+
+
 .page-map {
 	min-height: 240px;
-	padding: 5px;
+	padding: 5px 0;
 	background: #fff;
 }
 
@@ -382,6 +468,7 @@ header .content-wrap {
 
 #owl-demo .item{
     /*background: #41D7DD;*/
+    background: #CEF6FE;
     margin: 5px;
     /*color: #FFF;*/
     -webkit-border-radius: 3px;
@@ -391,10 +478,15 @@ header .content-wrap {
 	border: 1px solid #088CC0;
 	color: initial;
 	text-decoration: none;
+	
     
 }
 #owl-demo .item .grid-cell {
     /*padding: 30px 0px;*/
+    font-size: 1em;
+    line-height: 1.1em;
+    font-family: 'Raleway';
+    color: #088CC0;
 	
 }
 .service-ticker {
@@ -429,6 +521,7 @@ footer .grid.content-wrap{
 	}
 footer {
 	color: #088CC0;
+	background: #f7f7f7;
 	font-size: 0.9em;
 	border-top: 1px solid #088CC0;
 }
