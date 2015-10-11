@@ -2,15 +2,23 @@
 
 .page-header {
 	display: block;
-	background: rgba(255,255,255,0.5);
+	/*background: rgba(255,255,255,0.5);*/
+    color: #fff;
+    background: #088CC0;
+    padding: 30px 0;
 }
 .page-header h1{
-	padding: 30px;
-	margin: 0;
-	text-align: left;
+    padding: 0 30px;
+    margin: 0;
+    text-align: left;
     font-size: 40px;
-    color: #037696;
+    /*color: #037696;*/
     line-height: 1em;
+}
+.page-header p{
+    margin: 0;
+    font-size: 20px;
+    padding: 25px 50px 0 50px;
 }
 .innerpage-content p {
     padding: 0 20px 0 40px;

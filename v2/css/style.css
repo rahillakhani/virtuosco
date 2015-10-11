@@ -83,6 +83,14 @@ img {
 	text-align: right;
 }
 
+.tleft {
+	text-align: left;
+}
+
+.tcenter {
+	text-align: center;
+}
+
 .pad-left-zero {
 	padding-left: 0;
 }
@@ -106,6 +114,15 @@ img {
 	top: 100%;
 }
 
+.pointer-left-white{
+	position: absolute;
+	border: 10px solid transparent;
+	border-left: 0 none;
+	border-right-color: #f7f7f7;
+	right: 100%;
+	top: 50%;
+}
+
 
 
 header .grid {
@@ -122,6 +139,9 @@ header .content-wrap {
 	display: inline-block;
 	line-height: 0;
 	vertical-align: middle;
+}
+.logo a {
+	display: inline-block;
 }
 
 .nav-link li {
@@ -403,7 +423,8 @@ header .content-wrap {
 	line-height: 1.2em;
 }
 .testimonial h3,
-.mission-text-wrapper h3 {
+.mission-text-wrapper h3,
+.connect-us h3 {
 	border-bottom: 1px solid #ccc;
 	font-size: 27px;
 	line-height: 1em;
