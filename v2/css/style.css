@@ -93,7 +93,14 @@ img {
 .pad-right-zero {
 	padding-right: 0;
 }
-
+.pointer-top-white{
+	position: absolute;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	border-bottom-color: #333;
+	left: 50%;
+	top: 100%;
+}
 
 
 
@@ -418,12 +425,65 @@ header .content-wrap {
 	display: block;
 	line-height: 1.2em;
 }
+.testimonial h3,
 .mission-text-wrapper h3 {
 	border-bottom: 1px solid #ccc;
 	font-size: 27px;
 	line-height: 1em;
 	color: #088CC0;
 }
+
+.testimonial {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.testimonial h3{
+	/*margin-left:2%;*/
+	padding-right:2%;
+	margin: 0 0 50px 2%;
+}
+.testimonial .grid{
+	width: 100%;
+}
+.testimonial .grid-cell{
+	width: 30%;
+}
+.testimonial .grid-cell.client-img {
+	text-align: center;
+	padding: 3%;
+	border: 1px solid #ccc;
+	border-bottom: 0 none;
+}
+.testimonial .grid-cell.client-testimony {
+	padding: 0 5%;
+	background: #f7f7f7;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.testimonial .grid-cell.client-testimony p{
+	/*padding: 1%;
+	background: #f7f7f7;*/
+}
+.testimonial .grid-cell.client-name {
+	padding: 3% 5% 3% 5%;
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	color: #088CC0;
+	position: relative;
+}
+
+.client-img img{
+	/*display: block;*/
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid #efefef;
+	outline: 0 solid transparent;	
+}
+
+
+
+
 
 
 .in-touch {
