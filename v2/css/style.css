@@ -93,11 +93,20 @@ img {
 .pad-right-zero {
 	padding-right: 0;
 }
-.pointer-top-white{
+.pointer-top-grey{
 	position: absolute;
 	border: 10px solid transparent;
-	border-bottom-color: #fff;
-	border-bottom-color: #333;
+	/*border-bottom-color: #fff;*/
+	border-top: 0 none;
+	border-bottom-color: #f7f7f7;
+	left: 50%;
+	bottom: 100%;
+}
+.pointer-bottom-grey{
+	position: absolute;
+	border: 10px solid transparent;
+	border-bottom: 0 none;
+	border-top-color: #f7f7f7;
 	left: 50%;
 	top: 100%;
 }
@@ -447,6 +456,7 @@ header .content-wrap {
 }
 .testimonial .grid-cell{
 	width: 30%;
+	position: relative;
 }
 .testimonial .grid-cell.client-img {
 	text-align: center;
@@ -469,7 +479,8 @@ header .content-wrap {
 	border: 1px solid #ccc;
 	border-top: 0 none;
 	color: #088CC0;
-	position: relative;
+	line-height: 1.2em;
+	/*position: relative;*/
 }
 
 .client-img img{
