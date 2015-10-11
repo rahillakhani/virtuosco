@@ -1,0 +1,28 @@
+
+.about-banner {
+    /*background: #41D7DD;*/
+    background: #088CC0;
+    /*background: #fff;*/
+}
+.content-text {
+	margin-top: 50px;
+}
+.content-text p{
+	line-height: 1.2em;
+	padding: 0 5%;
+}
+.need-us {
+	width: 100%;
+}
+.need-us .grid-cell{
+	padding: 10px;
+	
+	}
+.need-us .text{
+	/*padding-left: 15px;*/
+	padding-right: 20px;
+}
+.need-us .image{
+	width:60px;
+	border-right: 1px solid #69E5FF;
+}
