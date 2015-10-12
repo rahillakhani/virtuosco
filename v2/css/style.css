@@ -32,13 +32,16 @@ button:hover{
 }
 .button,
  button{
+	font-size: 1em;
+	line-height: 1em;
  	text-decoration: none;
 	cursor: pointer;
 	color: #fff;
 	padding: 12px 20px;
 	border: 1px solid ;
-	font-size: 0.7em;
+	/*font-size: 0.7em;*/
 	background: #088CC0;
+	display: inline-block;
 }
 input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
@@ -420,11 +423,12 @@ header .content-wrap {
 .know-more {
 	background: #f7f7f7;
 	margin: 20px 0 40px 0;
-}
-.know-more {
 	font-size: 1.4em;
 	padding: 2em;
 	text-align: center;
+}
+.know-more a.button {
+	font-size: 0.7em;
 }
 
 
@@ -568,7 +572,7 @@ header .content-wrap {
 .in-touch .textarea .grid-cell button:hover{
 	background: #41D7DD;
 }*/
-.in-touch .textarea .grid-cell button{
+/*.in-touch .textarea .grid-cell button{
 	cursor: pointer;
 	color: #fff;
 	padding: 12px 20px;
@@ -577,7 +581,7 @@ header .content-wrap {
 	background: #088CC0;
 	min-width: 150px;
 	font-variant: small-caps;
-}
+}*/
 .in-touch .input .grid-cell{
 	padding: 10px;
 }
