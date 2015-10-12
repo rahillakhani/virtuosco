@@ -18,12 +18,27 @@ img {
 	vertical-align: bottom;
 	outline: none 0;
 } 
-h1,h2,h3,h4,h5,h6,textarea,button,input{
+h1,h2,h3,h4,h5,h6,textarea,button,input,.button{
 	font-family: 'Raleway';
 }
-button,input{
+button,input,.button{
 	font-weight: 500;
 	border: 1px solid #efefef !important;
+}
+
+.button:hover,
+button:hover{
+	background: #41D7DD;
+}
+.button,
+ button{
+ 	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	padding: 12px 20px;
+	border: 1px solid ;
+	font-size: 0.7em;
+	background: #088CC0;
 }
 input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
@@ -45,6 +60,9 @@ input[type=text]:focus, textarea:focus {
   border: 1px solid rgba(81, 203, 238, 1);
 }
 
+.bold {
+	font-weight: bold;
+}
 .grid {
 	display: table;
 }
@@ -284,6 +302,7 @@ header .content-wrap {
     font-weight: bold;
     min-width: 200px;
    	display: table;
+   	text-align:center;
 }
 .service_box a{
 	display: block;
@@ -401,17 +420,6 @@ header .content-wrap {
 .know-more {
 	background: #f7f7f7;
 	margin: 20px 0 40px 0;
-}
-.know-more button:hover{
-	background: #41D7DD;
-}
-.know-more button{
-	cursor: pointer;
-	color: #fff;
-	padding: 12px 20px;
-	border: 1px solid ;
-	font-size: 0.7em;
-	background: #088CC0;
 }
 .know-more {
 	font-size: 1.4em;
@@ -554,11 +562,12 @@ header .content-wrap {
     resize: none;
 }
 .in-touch .textarea .grid-cell textarea {
-	text-align: left;}
-
+	text-align: left;
+	}
+/*
 .in-touch .textarea .grid-cell button:hover{
 	background: #41D7DD;
-}
+}*/
 .in-touch .textarea .grid-cell button{
 	cursor: pointer;
 	color: #fff;
