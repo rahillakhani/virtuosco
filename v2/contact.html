@@ -10,6 +10,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.sticky.js"></script>
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="icon" href="images/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,31 +19,33 @@
 </head>
 <body>
 	<header class="clearfix">
-		<section class="content-wrap">
-			<div class="grid">
-				<div class="grid-row">
-					<div class="grid-cell logo">
-						<a href="/"><img src="images/logo.png" alt=""/><img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/></a>
+		<div class="nav-wrapper" id="header">
+			<section class="content-wrap">
+				<div class="grid">
+					<div class="grid-row">
+						<div class="grid-cell logo">
+							<a href="/"><img src="images/logo.png" alt=""/><img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/></a>
+						</div>
+						<div class="grid-cell nav-link tright">
+							<ul>
+								<li>
+									<a href="about.html">ABOUT</a>
+								</li>
+								<li>
+									<a href="#/services">SERVICES</a>
+								</li>
+								<li>
+									<a href="#/career">CAREER</a>
+								</li>
+								<li>
+									<a href="contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</div>						
 					</div>
-					<div class="grid-cell nav-link tright">
-						<ul>
-							<li>
-								<a href="about.html">ABOUT</a>
-							</li>
-							<li>
-								<a href="#/services">SERVICES</a>
-							</li>
-							<li>
-								<a href="#/career">CAREER</a>
-							</li>
-							<li>
-								<a href="contact.html">CONTACT</a>
-							</li>
-						</ul>
-					</div>						
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</header>
 	<section class="page-header">
 		<div class="content-wrap">
@@ -56,8 +59,10 @@
 			<div class="grid-row">
 				<div class="grid-cell add-text">
 					<span class="pointer-left-white"></span>
-					Virtuosco , Sai Pearl, Sainath Nagar, Vadgoan Sheri
-					<br>Pune, Maharashtra 411014 India
+					3rd Floor, Sai Pearl,
+					<br>Near Bollywood E-Square,
+					<br>Old Mundhwa Road, Kharadi,
+					<br>Pune, Maharashtra - 411014 India
 				</div>
 			</div>
 			<div class="grid-row">
@@ -145,5 +150,10 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$("#header").sticky({ topSpacing: 0 });
+		});
+	</script>
 </body>
 </html>

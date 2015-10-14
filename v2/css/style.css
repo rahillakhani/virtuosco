@@ -93,38 +93,6 @@ input[type=text]:focus, textarea:focus {
 	margin: 0 auto;
 }
 
-.fb:hover::before,.tw:hover::before,.gp:hover::before,.em:hover::before,.map:hover::before,.phone:hover::before {
-	background: rgba(255,255,255,0.5);
-	color: #0092BB;
-
-}
-.fb:before,.tw:before,.gp:before,.em:before, .map:before, .phone:before, .connect .fa-phone {
-	margin-left: 10px;
-	display: inline-block;
-	text-align: center;
-	width: 30px;
-	height: 30px;
-	line-height:30px;
-	overflow: hidden;
-	border-radius: 50%;
-	color: #fff 	;
-	cursor: pointer;
-	vertical-align: middle;
-	border: 2px solid #fff;
-}
-.fa {
-	vertical-align: top;
-}
-.connect .fa-phone {
-	margin-right: 10px;
-	cursor: auto;
-}
-.connect {
-	color: #fff;
-	background: #088CC0;
-	padding: 5px 0;
-	font-size: 14px;
-}
 .tright {
 	text-align: right;
 }
@@ -169,6 +137,38 @@ input[type=text]:focus, textarea:focus {
 	top: 50%;
 }
 
+.fb:hover::before,.tw:hover::before,.gp:hover::before,.em:hover::before,.map:hover::before,.phone:hover::before {
+	background: rgba(255,255,255,0.5);
+	color: #0092BB;
+
+}
+.fb:before,.tw:before,.gp:before,.em:before, .map:before, .phone:before, .connect .fa-phone {
+	margin-left: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height:30px;
+	overflow: hidden;
+	border-radius: 50%;
+	color: #fff 	;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 2px solid #fff;
+}
+.fa {
+	vertical-align: top;
+}
+.connect .fa-phone {
+	margin-right: 10px;
+	cursor: auto;
+}
+.connect {
+	color: #fff;
+	background: #088CC0;
+	padding: 5px 0;
+	font-size: 14px;
+}
 
 
 header .grid {
@@ -189,7 +189,18 @@ header .content-wrap {
 .logo a {
 	display: inline-block;
 }
-
+.nav-wrapper {
+	background: #FFF;
+	z-index: 1000;
+}
+.is-sticky:after {
+	clear:both;
+	display: block;
+	content: "";
+}
+.is-sticky .nav-wrapper{
+	border-bottom: 1px solid #00D3FF;
+}
 .nav-link li {
 	display: inline-block;
 	width: 100px;

@@ -10,16 +10,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.sticky.js"></script>
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
-	<script type="text/javascript" src="lib/owl-carousel/owl.carousel.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/pages.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
-
 </head>
 <body>
 	<header class="clearfix">
@@ -27,7 +23,7 @@
 			<div class="grid content-wrap">
 				<div class="grid-row">
 					<div class="grid-cell">
-						<a href="#map" class="fa fa-map-marker fb" title="facebook"></a>
+						<a href="contact.html#map" class="fa fa-map-marker fb" title="facebook"></a>
 						<i class="fa fa-phone"></i><span> +91-9123456789</span>
 					</div>
 					<div class="grid-cell tright">
@@ -40,31 +36,33 @@
 				</div>
 			</div>
 		</div>
-		<section class="content-wrap">
-			<div class="grid">
-				<div class="grid-row">
-					<div class="grid-cell logo">
-						<a href="/"><img src="images/logo.png" alt=""/><img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/></a>
+		<div class="nav-wrapper" id="header">
+			<section class="content-wrap">
+				<div class="grid">
+					<div class="grid-row">
+						<div class="grid-cell logo">
+							<a href="/"><img src="images/logo.png" alt=""/><img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/></a>
+						</div>
+						<div class="grid-cell nav-link tright">
+							<ul>
+								<li>
+									<a href="about.html">ABOUT</a>
+								</li>
+								<li>
+									<a href="#/services">SERVICES</a>
+								</li>
+								<li>
+									<a href="#/career">CAREER</a>
+								</li>
+								<li>
+									<a href="contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</div>						
 					</div>
-					<div class="grid-cell nav-link tright">
-						<ul>
-							<li>
-								<a href="about.html">ABOUT</a>
-							</li>
-							<li>
-								<a href="#/services">SERVICES</a>
-							</li>
-							<li>
-								<a href="#/career">CAREER</a>
-							</li>
-							<li>
-								<a href="contact.html">CONTACT</a>
-							</li>
-						</ul>
-					</div>						
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</header>
 
 	<section class="page-header">
@@ -78,12 +76,11 @@
 			<img src="images/about_virtuosco1.png" alt="">
 		</div>
 	</section>
-	<section class="about-banner">
+<!-- 	<section class="about-banner">
 		<div class="content-wrap">
 			<img src="images/about_virtuosco2.png" alt="">
 		</div>
-	</section>
-	<center><b>select one of the two above images.</b></center>
+	</section> -->
 	<section class="page-content content-wrap">
 		<div class="content-text">
 			<h4>The Start of an Era</h4>
@@ -149,18 +146,7 @@
 	<section class="data-download">
 		<div class="content-wrap grid">
 			<div class="grid-row">
-				<div class="grid-cell">
-						<ul class="legends">
-							<li class="bold">Our Reach and Experience</li>
-							<li><span style="background: #3366cc;"></span> IT ­ 15000 Leads and counting</li>
-							<li><span style="background: #dc3912;"></span> Marketing ­ 8000 Leads and counting</li>
-							<li><span style="background: #ff9900;"></span> Finance ­ 6500 Leads and counting</li>
-							<li><span style="background: #109618;"></span> Operations ­ 6000 Leads and counting</li>
-							<li><span style="background: #990099;"></span> HR ­ 4000 Leads and counting</li>
-							<li><span style="background: #0099c6;"></span> Education ­ 2500 Leads and counting</li>
-							<li><span style="background: #dd4477;"></span> Federal & Government ­ 3000 Leads and counting</li>
-						</ul></div>
-						<div class="grid-cell chart">
+				<div class="grid-cell chart">
 					<script type="text/javascript" src="lib/jsapi"></script>
 					<script type="text/javascript">
 						google.load("visualization", "1", {packages:["corechart"]});
@@ -176,7 +162,7 @@
 								['HR',4000],
 								['Education',4500],
 								['Federal',3000]
-							]);
+								]);
 
 							var options = {
 								title: 'Leads Generated till now',
@@ -194,7 +180,18 @@
 					</script>
 					<div id="piechart" style="width: 300px; height: 310px;"></div>
 				</div>
-				<div class="grid-cell"></div>
+				<div class="grid-cell">
+					<ul class="legends">
+						<li class="bold">Our Reach and Experience</li>
+						<li><span style="background: #3366cc;"></span> IT ­ 15000 Leads and counting</li>
+						<li><span style="background: #dc3912;"></span> Marketing ­ 8000 Leads and counting</li>
+						<li><span style="background: #ff9900;"></span> Finance ­ 6500 Leads and counting</li>
+						<li><span style="background: #109618;"></span> Operations ­ 6000 Leads and counting</li>
+						<li><span style="background: #990099;"></span> HR ­ 4000 Leads and counting</li>
+						<li><span style="background: #0099c6;"></span> Education ­ 2500 Leads and counting</li>
+						<li><span style="background: #dd4477;"></span> Federal & Government ­ 3000 Leads and counting</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -317,10 +314,10 @@
 				</div>
 			</div>
 		</footer>
-		<section id="map" class="page-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.707267788757!2d73.93164319999998!3d18.54212605000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c17c200acbcf%3A0x1a2692a701102925!2sSai+Pearl%2C+Sainath+Nagar%2C+Wadgaon+Sheri%2C+Pune%2C+Maharashtra+411014!5e0!3m2!1sen!2sin!4v1440952483030" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen>
-				Location
-			</iframe>
-		</section>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$("#header").sticky({ topSpacing: 0 });
+			});
+		</script>
 	</body>
 	</html>
