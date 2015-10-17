@@ -1,0 +1,11 @@
+.page-content .job-desc.grid {
+	margin: 20px;
+}
+.page-content b {
+	color: #088CC0;
+	font-size: 1.2em;
+	line-height: 1em;
+}
+.page-content .job-desc .grid-cell {
+	padding: 7px;
+}

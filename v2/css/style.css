@@ -498,14 +498,12 @@ header .content-wrap {
 .testimonial .grid-cell.client-img {
 	text-align: center;
 	padding: 3%;
-	border: 1px solid #ccc;
-	border-bottom: 0 none;
 }
 .testimonial .grid-cell.client-testimony {
 	padding: 0 5%;
 	background: #f7f7f7;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border: 1px solid #ccc;
+	border-bottom: 0 none;
 }
 .testimonial .grid-cell.client-name {
 	padding: 3% 5% 3% 5%;
