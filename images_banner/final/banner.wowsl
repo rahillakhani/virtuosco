@@ -17,14 +17,14 @@
             <HtmlCharset>UTF-8</HtmlCharset>
             <ImageAspectRatio>true</ImageAspectRatio>
             <ImageEffect>glass_parallax</ImageEffect>
-            <ImageFillColor>#000000</ImageFillColor>
+            <ImageFillColor>#ffffff</ImageFillColor>
             <ImageHeight>400</ImageHeight>
             <ImageQuality>100</ImageQuality>
             <ImageShrink2>false</ImageShrink2>
             <ImageStretch>true</ImageStretch>
             <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/slim/</ImageTemplate>
             <ImageTemplateName>Slim</ImageTemplateName>
-            <ImageWidth>1000</ImageWidth>
+            <ImageWidth>1200</ImageWidth>
             <Images>true</Images>
             <JoomlaType>2.5</JoomlaType>
             <OneLoop>false</OneLoop>
@@ -36,7 +36,7 @@
             <PublishPath>C:/Users/RahilLakhani/Desktop/Virtuosco/v2</PublishPath>
             <PublishPreview>true</PublishPreview>
             <PublishType>page</PublishType>
-            <RelativePath>true</RelativePath>
+            <RelativePath>false</RelativePath>
             <ShowBullets>0</ShowBullets>
             <ShowControls>true</ShowControls>
             <ShowTooltips>0</ShowTooltips>
@@ -45,7 +45,7 @@
             <SlideshowDuration>30</SlideshowDuration>
             <SoundEnable>0</SoundEnable>
             <SoundFileName></SoundFileName>
-            <StopOnHover>true</StopOnHover>
+            <StopOnHover>false</StopOnHover>
             <SwipeSupport>1</SwipeSupport>
             <TemplateColor>#38b6cd</TemplateColor>
             <TemplateFont>Istok Web</TemplateFont>
@@ -59,29 +59,29 @@
             <TooltipPos>bottom</TooltipPos>
             <noFrame>0</noFrame>
         </Settings>
-        <Images RelativePath="true">
+        <Images RelativePath="false">
             <Image>
-                <url>../../v2/images/banner/banner-1.png</url>
+                <url>C:/Users/RahilLakhani/Desktop/Virtuosco/v2/images/banner/banner-1.png</url>
                 <title>banner-1</title>
                 <filesize>143951</filesize>
             </Image>
             <Image>
-                <url>../../v2/images/banner/banner2.png</url>
+                <url>C:/Users/RahilLakhani/Desktop/Virtuosco/v2/images/banner/banner2.png</url>
                 <title>banner2</title>
                 <filesize>528877</filesize>
             </Image>
             <Image>
-                <url>../../v2/images/banner/banner3.png</url>
+                <url>C:/Users/RahilLakhani/Desktop/Virtuosco/v2/images/banner/banner3.png</url>
                 <title>banner3</title>
                 <filesize>360930</filesize>
             </Image>
             <Image>
-                <url>../../v2/images/banner/banner4.png</url>
+                <url>C:/Users/RahilLakhani/Desktop/Virtuosco/v2/images/banner/banner4.png</url>
                 <title>banner4</title>
                 <filesize>165117</filesize>
             </Image>
             <Image>
-                <url>../../v2/images/banner/banner5.png</url>
+                <url>C:/Users/RahilLakhani/Desktop/Virtuosco/v2/images/banner/banner5.png</url>
                 <title>banner5</title>
                 <filesize>152212</filesize>
             </Image>
