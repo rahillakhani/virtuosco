@@ -1,20 +1,20 @@
 h4 {
 	font-size: 24px;
-    color: #666666;
-    line-height: 36px;
-    font-weight: normal;
-    border-bottom: 4px double #cdcdcd;
-    padding: 20px;
-    margin: 10px auto 50px auto;
-    font-weight: bold;
-    min-width: 200px;
-    display: table;
-    text-align: center;
+	color: #666666;
+	line-height: 36px;
+	font-weight: normal;
+	border-bottom: 4px double #cdcdcd;
+	padding: 20px;
+	margin: 10px auto 50px auto;
+	font-weight: bold;
+	min-width: 200px;
+	display: table;
+	text-align: center;
 }
 .about-banner {
-    /*background: #41D7DD;*/
-    background: #088CC0;
-    /*background: #fff;*/
+	/*background: #41D7DD;*/
+	background: #088CC0;
+	/*background: #fff;*/
 }
 .content-text {
 	margin-top: 50px;
@@ -25,9 +25,9 @@ h4 {
 }
 .our-team {
 	background: #f7f7f7;
-    padding: 20px;
-    margin-top: 47px;
-    padding-bottom: 40px;
+	padding: 20px;
+	margin-top: 47px;
+	padding-bottom: 40px;
 }
 .our-team h4{
 	margin-top:0;
@@ -45,7 +45,7 @@ h4 {
 .need-us .grid-cell{
 	padding: 10px;
 	
-	}
+}
 /*.team .text,*/
 .need-us .text{
 	/*padding-left: 15px;*/
@@ -61,7 +61,7 @@ h4 {
 .team .image img{
 	border: 2px solid #69E5FF;
 	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .data-download-title {
 	margin-top: 50px;
@@ -82,9 +82,9 @@ h4 {
 .data-download .grid-cell.chart #piechart{
 	margin: 0 auto;
 }
-.data-download .grid-cell.chart {
+.data-download .grid-cell {
 	background:url('../images/chart_bg.png');
-	}
+}
 .data-download .grid-cell .legends li {
 	padding: 4px 0;
 }
@@ -93,6 +93,6 @@ h4 {
 	width: 10px;
 	height: 10px;
 	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	margin: 0 7px;
 }

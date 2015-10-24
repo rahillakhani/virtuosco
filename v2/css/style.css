@@ -76,7 +76,9 @@ input[type=text]:focus, textarea:focus {
 	display: table-cell;
 	vertical-align: middle;
 }
-
+.grey{
+	color: #9E9E9E;
+}
 .clearfix:after {
 	clear: both;
 	display: block;
@@ -162,6 +164,12 @@ input[type=text]:focus, textarea:focus {
 .connect .fa-phone {
 	margin-right: 10px;
 	cursor: auto;
+}
+.connect a:hover{
+	color: #41D7DD;
+}
+.connect a{
+	color: #fff;
 }
 .connect {
 	color: #fff;
@@ -359,7 +367,7 @@ header .content-wrap {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	min-height: 311px;
+	min-height: 350px;
 }
 .service-box a:hover{
 	background: #CEF6FE;
@@ -381,9 +389,12 @@ header .content-wrap {
 	color: inherit;
 	text-align: center;
 }
-.service-box a b{
-	font-size: 1.2em;
+.service-box a h3{
 	line-height: 3em;
+}
+.service-box a b,
+.service-box a h3{
+	font-size: 1.2em;
 	font-family: 'Raleway'
 }
 .service-box a p{
@@ -690,22 +701,61 @@ header .content-wrap {
 footer .grid.content-wrap{
 	width: 100%;
 	}
+footer h3 {
+	
+}
+footer .text{
+	line-height: 1.2em;
+}
 footer {
 	color: #088CC0;
 	background: #f7f7f7;
-	font-size: 0.9em;
+	/*font-size: 0.9em;*/
 	border-top: 1px solid #088CC0;
 }
-footer a:hover {
-	color: #088CC0;
+footer .grid-cell {
+	width: 30%;
+	vertical-align: top;
+	padding: 30px 0;
+}
+footer .grid-cell.desc ,
+footer .grid-cell.address-box {
+	padding-left: 5%;
+}
+footer nav.grid-cell {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+footer .grid-cell ul{
+	padding: 0;
 }
 footer a{
 	color: #41D7DD;
 	text-decoration: none;
 }
-footer .nav-link li a:hover{
-	color: #fff;
+footer .nav-link {
+	margin-top: 40px;
+}
+footer .nav-link li {
+	display: block;
+	width: auto;
+}
+footer a:hover {
+	color: #088CC0;
+}
+/*footer .nav-link li a{}*/
+footer .nav-link li a {
+	font-size: 0.9em;
+	line-height: 2em;
+	text-align: center;
+	padding-right: 20%;
+}
+footer .nav-link li a:hover {
+	background: none;
+	color: #088CC0;
+	text-decoration: underline;
+	
 }
 footer.content-wrap .nav-link li{
-	float: left;
+	/*float: left;*/
 }

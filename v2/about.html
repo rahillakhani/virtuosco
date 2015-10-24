@@ -11,6 +11,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<script src="lib/jQuery/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="lib/jquery.sticky.js"></script>
+	<script type="text/javascript" src="lib/jsapi"></script>
+
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="icon" href="images/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -30,7 +32,8 @@
 
 						<a href="https://www.facebook.com/Virtuosco" class="fa fa-facebook fb" title="facebook"></a>
 						<a href="https://www.twitter.com" class="fa fa-twitter tw" title="twitter"></a>
-						<a href="https://www.linkedin.com/company/4812648" class="fa fa-linkedin gp" title="google-plus"></a>
+						<a href="https://www.linkedin.com/company/4812648" class="fa fa-linkedin gp" title="linkedin"></a>
+						<a href="https://www.linkedin.com/company/4812648" class="fa fa-google-plus gp" title="google-plus"></a>
 						<a href="mailto:info@virtuosco.com" class="fa fa-envelope-o em" title="email"></a>
 					</div>
 				</div>
@@ -41,7 +44,8 @@
 				<div class="grid">
 					<div class="grid-row">
 						<div class="grid-cell logo">
-							<a href="/"><img src="images/logo.png" alt=""/><img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/></a>
+							<img src="images/logo.png" alt=""/>
+							<img src="images/logo-virtuosco.png" style="height: 50px;" alt=""/>
 						</div>
 						<div class="grid-cell nav-link tright">
 							<ul>
@@ -147,7 +151,6 @@
 		<div class="content-wrap grid">
 			<div class="grid-row">
 				<div class="grid-cell chart">
-					<script type="text/javascript" src="lib/jsapi"></script>
 					<script type="text/javascript">
 						google.load("visualization", "1", {packages:["corechart"]});
 						google.setOnLoadCallback(drawChart);
@@ -178,7 +181,7 @@
 							chart.draw(data, options);
 						}
 					</script>
-					<div id="piechart" style="width: 300px; height: 310px;"></div>
+					<div id="piechart" style="width: 320px; height: 310px;"></div>
 				</div>
 				<div class="grid-cell">
 					<ul class="legends">
@@ -198,51 +201,42 @@
 	<section class="mission-text-wrapper content-wrap">
 		<div class="testimonial">
 			<h4>Testimonials</h4>
-
 			<div class="grid">
 				<div class="grid-row">
-					<div class="grid-cell client-img">
-						<img src="images/clientimg1.jpg" alt=""/>
-					</div>
-					<div class="grid-cell client-img">
-						<img src="images/clientimg2.jpg" alt=""/>
-					</div>
-					<div class="grid-cell client-img">
-						<img src="images/clientimg3.jpg" alt=""/>
-					</div>
-				</div>
-				<div class="grid-row">
 					<div class="grid-cell client-testimony">
-						<span class="pointer-top-grey"></span>
+						<!-- <span class="pointer-top-grey"></span> -->
 						<span class="pointer-bottom-grey"></span>
 
-						<p>"Testimoni text will reside here so get me some text to put in here. Testimoni text will reside here so get me some text to put in here. "</p>
+						<p>"Accelise has been proving it's capabilities every month and have always exceeded our expectations, by delivering high quality leads into our system; we look forward to continue this mutually beneficial relationship."</p>
 					</div>
 					<div class="grid-cell client-testimony">
-						<span class="pointer-top-grey"></span>
+						<!-- <span class="pointer-top-grey"></span> -->
 						<span class="pointer-bottom-grey"></span>
 
-						<p>"Testimoni text will reside here so get me some text to put in here. Testimoni text will reside here so get me some text to put in here. "</p>
+						<p>"We are happy to work with Accelise, apart from developing pipelines we are able to convert more appointments into deals with a shorter sales cycle. The team is always very well organized and detail oriented."</p>
 					</div>
 					<div class="grid-cell client-testimony">
-						<span class="pointer-top-grey"></span>
+						<!-- <span class="pointer-top-grey"></span> -->
 						<span class="pointer-bottom-grey"></span>
 
-						<p>"Testimoni text will reside here so get me some text to put in here. Testimoni text will reside here so get me some text to put in here. "</p>
+						<p>"Accelise has soon become one of our key publishers, their ability to deliver on various campaigns is commendable and they have been supplying us huge production volume with good quality, consistency and proper execution. Pat on the back!"</p>
 					</div>
 				</div>
 				<div class="grid-row">
 					<div class="grid-cell client-name">
-						Name Surname<br>
-						<i>- Designation, Company</i>
+						Manager <br>
+						<b>Partner Operations</b><br>
+						<i>-A B2B Marketing Agency</i>
 					</div>
 					<div class="grid-cell client-name">
-						Name Surname<br>
-						<i>- Designation, Company</i>
+						Co-Founder & Executive Director<br>
+						<b>Enterprise IT Services Company</b><br>
+						<i>- A Microsoft Gold Certified Partner</i>
 					</div>
 					<div class="grid-cell client-name">
-						Name Surname<br>
-						<i>- Designation, Company</i>
+						Manager<br>
+						<b>Affiliate Partnerships</b><br>
+						<i>- A B2B Performance Marketing Company</i>
 					</div>
 				</div>
 			</div>
@@ -293,6 +287,16 @@
 	<footer>
 		<div class="grid content-wrap">
 			<div class="grid-row">
+				<div class="grid-cell desc">
+					<h3>Virtuosco</h3>
+					<p class="text grey">
+						Virtuosco was founded in 2005<br>
+						by three Indian veterans,<br>
+						intent on offering high technology<br>
+						companies a new option to drive demand<bR>
+						while lowering the cost of sales.
+					</p>
+				</div>
 				<nav class="grid-cell">
 					<ul class="nav-link clearfix">
 						<li>
@@ -309,15 +313,32 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="grid-cell tright">
-					Copyright &copy and All rights reserved by Virtuosco.in |  Powered by <a href="#">RahilLakhani</a>.</div>
+				<div class="grid-cell address-box">
+					<h3>Address</h3>
+					<p class="text">3rd Floor, Sai Pearl, <br>
+						Near Bollywood E-Square, <br>
+						Old Mundhwa Road, Kharadi, <br>
+						Pune, Maharashtra - 411014 India
+					</p>
+					<p class="text">
+						<b>Phone</b>: +1-844-295-2907
+					</p>
+					<p class="text">
+						<b>Email</b>: <a href="mailto:info@virtuosco.com">info@virtuosco.com</a>
+					</p>
 				</div>
 			</div>
-		</footer>
-		<script type="text/javascript">
-			$(window).load(function(){
-				$("#header").sticky({ topSpacing: 0 });
-			});
-		</script>
-	</body>
-	</html>
+		</div>
+	</footer>
+	<div class="connect">
+		<div class="content-wrap tcenter">
+			Copyright &copy and All rights reserved by Virtuosco.in |  Powered by <a href="#">RahilLakhani</a>.
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$("#header").sticky({ topSpacing: 0 });
+		});
+	</script>
+</body>
+</html>
