@@ -460,17 +460,42 @@ header .content-wrap {
 .mission-text-wrapper .grid-cell.pad-right-zero p{
 	padding-right: 2%;
 }	
-.mission-text-wrapper .grid-cell.image {
-	vertical-align: middle;
-	border: 1px solid #ccc;
-	background: #3FADBC;
-	background: #1D85BB;
-}
+
+.mission-text-wrapper .grid-cell.needus h3{
+	color: #FFF;
+	}
 .mission-text-wrapper .grid-cell p{
 	min-height: 50px;
 	display: block;
 	line-height: 1.2em;
 }
+
+.mission-text-wrapper .grid-cell.needus img{
+	width: 40px;
+}
+.mission-text-wrapper .grid-cell.needus {
+	/*vertical-align: middle;*/
+	/*border: 1px solid #ccc;*/
+	/*background: #3FADBC;*/
+	background: #1D85BB;
+	padding-bottom: 28px;
+	padding-left: 40px;
+	padding-left: 40px;
+}
+.mission-text-wrapper .grid-cell.needus .grid-cell{
+	width: auto;
+	color: #FFF;
+	vertical-align: middle;
+}
+.mission-text-wrapper .grid-cell.needus .need-us .text{
+	padding-right: 30px;
+}
+.mission-text-wrapper .grid-cell.needus .need-us .image{
+	padding: 15px 0;
+	width: 50px;
+	text-align: center;
+}
+
 .testimonial h3,
 .mission-text-wrapper h3,
 .connect-us h3 {
