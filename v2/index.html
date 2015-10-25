@@ -12,9 +12,6 @@
 	<script src="lib/jQuery/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="lib/jquery.sticky.js"></script>
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
-	<script type="text/javascript" src="lib/owl-carousel/owl.carousel.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<link rel="icon" href="images/favicon.ico"/>
@@ -310,42 +307,6 @@
 	<script type="text/javascript">
 		$(window).load(function(){
 			$("#header").sticky({ topSpacing: 0 });
-		});
-		$(document).ready(function() {
-			var owl = $("#owl-demo");
-			owl.owlCarousel({
-				autoPlay : true,
-				autoplayTimeout : 1000,
-				autoplayHoverPause : true,
-				animateOut : true,
-				animateIn : true,
-				items: 4,
-				itemsDesktop : [1199,4],
-				itemsDesktopSmall : [980,3],
-				itemsTablet: [768,2],
-				itemsTabletSmall: false,
-				itemsMobile : [479,1],
-				singleItem : false,
-				itemsScaleUp : true,
-				slideSpeed : 300,
-				stopOnHover : true,
-				navigation : false,
-				navigationText : false,
-				pagination : false,
-				responsive : true,
-				lazyLoad : true,
-				mouseDrag : false,
-				touchDrag : true,
-				rewindNav : true,
-				loop: true
-
-			});
-			$(".next").click(function(){
-				owl.trigger('owl.next');
-			});
-			$(".prev").click(function(){
-				owl.trigger('owl.prev');
-			});
 		});
 	</script>
 </body>
