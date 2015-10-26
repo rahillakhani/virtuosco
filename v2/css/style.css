@@ -448,6 +448,7 @@ header .content-wrap {
 	font-size: 1.4em;
 	padding: 2em;
 	text-align: center;
+	line-height: 1.2em;
 }
 .know-more a.button {
 	font-size: 0.7em;
@@ -651,16 +652,19 @@ header .content-wrap {
 
 
 
-#owl-demo .item{
+#owl-demo .item:hover{
     background: #CEF6FE;
+	border: 1px solid #088CC0;
+}
+#owl-demo .item{
     margin: 5px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
-	border: 1px solid #088CC0;
 	color: initial;
 	text-decoration: none;
+	border: 1px solid #cdcdcd;
 	
     
 }
@@ -717,6 +721,10 @@ footer .grid-cell {
 	width: 30%;
 	vertical-align: top;
 	padding: 30px 0;
+}
+footer .grid-cell.desc {
+	background: #088CC0;
+	color: #fff;
 }
 footer .grid-cell.desc ,
 footer .grid-cell.address-box {

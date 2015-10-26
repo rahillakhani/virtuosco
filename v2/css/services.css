@@ -1,14 +1,37 @@
-
 .content-wrap.grid {
 	width: 100%;
 }
-.primary-service .grid-cell.image {
-	text-align: center;
+.primary-service .grid-cell.text h2{
+	line-height: 1.3em;
+	border-bottom: 1px solid #fff;
+	margin: 20px auto;
+	width: 90%;
+	color: #fff;
+}
+.primary-service .grid-cell.text {
+	background: #56CFFF;
+	color: #088CC0;
+	color: #fff;
+}
+.primary-service .grid-cell.text p{
+	width: 280px;
+	margin: 35px auto;
+	line-height: 1.2em;
+	color: #088CC0;
+}
+.primary-service .grid-cell.text p b{
+	display: block;
+	padding: 20px 0 15px 0;
+	line-height: 1em;
+	font-size: 18px;
+	color: #FFF;
 }
 .primary-service .grid {
 	margin: 50px auto;
 }
 .primary-service .grid-cell {
 	padding: 2%;
+	width: 50%;
 	vertical-align: middle;
+	text-align: center;
 }
