@@ -611,6 +611,11 @@ header .content-wrap {
 	width: 90%;
     resize: none;
 }
+.in-touch .textarea .grid-cell input[type='button'],
+.in-touch .textarea .grid-cell input[type='submit'] {
+	width: auto;
+	min-width: 150px;
+}
 .in-touch .textarea .grid-cell textarea {
 	text-align: left;
 	}
