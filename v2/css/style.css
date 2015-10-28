@@ -241,62 +241,36 @@ header .content-wrap {
 	padding: 20px 0 20px 0;
 }
 
-.rnewsletter h5 {
-	font-size: 24px;
-}
-
-.rnewsletter .grid-cell:nth-child(even) {
-	padding-right: 10px;
-}
-
-.rnewsletter .grid-cell input[type='text']{
-	padding: 4px;
-	color: #00647F;
-}
-.rnewsletter .grid-cell {
-	padding: 10px 0px 10px 10px;
-	text-align: left;
-}
-
-.rnewsletter {
-	border-left: 1px solid #2fadbb;
-	border-right: 1px solid #fff;
-	min-width: 250px;
-	padding-right: 20px;
-	background: #088CC0;
-	color: #fff;
-	vertical-align: top;
-	padding-bottom: 40px;
-	position: relative;
-	text-align: center;
-}
-
-.rnewsletter button:hover {
-	background: #DBFCFF;
-}
-
-.rnewsletter button {
-	background: #fff;
+.newsletter {
+	position: fixed;
+	right: 1%;
+	bottom: 0;
 	padding: 10px;
-	text-align: center;
 	width: 200px;
-	margin: 0 auto;
-	border: 1px solid #eee;
+	text-align: center;
+	z-index: 1000;
 	cursor: pointer;
-	border-radius: 4px;
-	bottom: 15px;
-	font-size: 15px;
-	color: #00647F;
+	border: 1px solid  #41D7DD;
+	border-bottom: 0 none;
+	color: #fff;
+/*	background: #f7f7f7;
+	color: #088CC0;
+	
+    color: #f7f7f7;
+    background: #7fba00;*/
+	color: #F7F7F7;
+	background: #088CC0;
+	font-size: 0.9em;
 }
-
-.rnewsletter form {
-	display: table;
-	border-top: 1px solid #2fadbb;
-	border-bottom: 1px solid #2fadbb;
-	padding: 15px 0;
-	margin: 15px 0 35px 0;
+.newsletter:after {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	content: "+";
+	font-size: 1.1em;
+	font-weight: bold;
 }
-
 .content-text {
 	padding-left: 20px;
 	vertical-align: top;
@@ -730,6 +704,17 @@ footer .grid-cell {
 footer .grid-cell.desc {
 	background: #088CC0;
 	color: #fff;
+	padding-right: 5%;
+}
+footer .grid-cell .connect{ 
+	/*background: #FFF;*/
+	text-align:center;
+}
+footer .grid-cell .connect img{
+	width: 10%;
+    border-radius: 50%;
+    border: 1px solid #41D7DD;
+    margin: 0 3px;
 }
 footer .grid-cell.desc ,
 footer .grid-cell.address-box {
