@@ -268,7 +268,7 @@ header .content-wrap {
 	right: 10px;
 	top: 10px;
 	display: inline-block;
-	content: "+";
+	content: attr(data-content);
 	font-size: 1.1em;
 	font-weight: bold;
 }
