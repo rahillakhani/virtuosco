@@ -213,8 +213,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="newsletter">
+	<section id="slideOpen" class="newsletter">
 		Pop Me Open to View
+		<script type="text/javascript">
+			
+		</script>
 	</section>
 	<footer>
 		<div class="grid content-wrap">
@@ -276,39 +279,11 @@
 			$("#header").sticky({ topSpacing: 0 });
 		});
 		$(document).ready(function() {
-			var owl = $("#owl-demo");
-			owl.owlCarousel({
-				autoPlay : true,
-				autoplayTimeout : 1000,
-				autoplayHoverPause : true,
-				animateOut : true,
-				animateIn : true,
-				items: 4,
-				itemsDesktop : [1199,4],
-				itemsDesktopSmall : [980,3],
-				itemsTablet: [768,2],
-				itemsTabletSmall: false,
-				itemsMobile : [479,1],
-				singleItem : false,
-				itemsScaleUp : true,
-				slideSpeed : 300,
-				stopOnHover : true,
-				navigation : false,
-				navigationText : false,
-				pagination : false,
-				responsive : true,
-				lazyLoad : true,
-				mouseDrag : false,
-				touchDrag : true,
-				rewindNav : true,
-				loop: true
-
-			});
-			$(".next").click(function(){
-				owl.trigger('owl.next');
-			});
-			$(".prev").click(function(){
-				owl.trigger('owl.prev');
+			$( "#slideOpen" ).click(function() {
+			    if ( $(this).height() != 16)
+			          $( this ).animate({ height: 16 }, 1000 );
+			    else
+			          $( this ).animate({ height: 200 }, 1000 );
 			});
 		});
 	</script>

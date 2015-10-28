@@ -200,7 +200,7 @@
 	</form>
 </section> -->
 
-	<section class="newsletter">
+	<section id="slideOpen" class="newsletter">
 		Pop Me Open to View
 	</section>
 <footer>
@@ -258,6 +258,14 @@
 	$(window).load(function(){
 		$("#header").sticky({ topSpacing: 0 });
 	});
+	$(document).ready(function() {
+			$( "#slideOpen" ).click(function() {
+			    if ( $(this).height() != 16)
+			          $( this ).animate({ height: 16 }, 1000 );
+			    else
+			          $( this ).animate({ height: 200 }, 1000 );
+			});
+		});
 </script>
 </body>
 </html>
