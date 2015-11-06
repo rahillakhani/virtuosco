@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6,textarea,button,input,.button{
 }
 button,input,.button{
 	font-weight: 500;
-	border: 1px solid #efefef !important;
+	border: 1px solid #ccc !important;
 }
 
 .button:hover,
@@ -117,7 +117,7 @@ input[type=text]:focus, textarea:focus {
 	position: absolute;
 	border: 10px solid transparent;
 	border-top: 0 none;
-	border-bottom-color: #f7f7f7;
+	border-bottom-color: #e8e8e8;
 	left: 50%;
 	bottom: 100%;
 }
@@ -125,7 +125,7 @@ input[type=text]:focus, textarea:focus {
 	position: absolute;
 	border: 10px solid transparent;
 	border-bottom: 0 none;
-	border-top-color: #f7f7f7;
+	border-top-color: #e8e8e8;
 	left: 50%;
 	top: 100%;
 }
@@ -134,7 +134,7 @@ input[type=text]:focus, textarea:focus {
 	position: absolute;
 	border: 10px solid transparent;
 	border-left: 0 none;
-	border-right-color: #f7f7f7;
+	border-right-color: #e8e8e8;
 	right: 100%;
 	top: 50%;
 }
@@ -254,12 +254,12 @@ header .content-wrap {
 	border-bottom: 0 none;
 	color: #fff;
 	height: 16px;
-/*	background: #f7f7f7;
+/*	background: #e8e8e8;
 	color: #088CC0;
 	
-    color: #f7f7f7;
+    color: #e8e8e8;
     background: #7fba00;*/
-	color: #F7F7F7;
+	color: #e8e8e8;
 	background: #088CC0;
 	font-size: 0.9em;
 }
@@ -376,7 +376,7 @@ header .content-wrap {
 	text-align: left;
 	padding: 10px 25px;
     line-height: 1.4em;
-
+    text-align: center;
 }
 .service-box a figure {
 	display: block;
@@ -418,7 +418,7 @@ header .content-wrap {
 }
 
 .know-more {
-	background: #f7f7f7;
+	background: #e8e8e8;
 	margin: 20px 0 40px 0;
 	font-size: 1.4em;
 	padding: 2em;
@@ -513,7 +513,7 @@ header .content-wrap {
 }
 .testimonial .grid-cell.client-testimony {
 	padding: 0 5%;
-	background: #f7f7f7;
+	background: #e8e8e8;
 	border: 1px solid #ccc;
 	border-bottom: 0 none;
 }
@@ -534,7 +534,7 @@ header .content-wrap {
 }
 
 .in-touch {
-	background: #f7f7f7;
+	background: #e8e8e8;
 	padding: 20px;
 	margin-top: 47px;
 }
@@ -575,7 +575,7 @@ header .content-wrap {
 	line-height: 2em;
 	padding: 5px;
 	text-align: center;
-	border-color: #efefef !important;
+	border-color: #ccc !important;
 	border-style: solid !important;
 	border-width: 1px !important;
 	font-family: 'Raleway';
@@ -693,7 +693,7 @@ footer .text{
 }
 footer {
 	color: #088CC0;
-	background: #f7f7f7;
+	background: #e8e8e8;
 	/*font-size: 0.9em;*/
 	border-top: 1px solid #088CC0;
 }
