@@ -69,28 +69,7 @@
 	</header>
 	<section class="banner">
 		<div class="content-wrap">
-			<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-			<div id="wowslider-container0">
-				<div class="ws_images"><ul>
-					<li><img src="data0/images/banner1.png" alt="banner1" title="banner1" id="wows0_0"/></li>
-					<li><img src="data0/images/banner2.png" alt="banner2" title="banner2" id="wows0_1"/></li>
-					<li><img src="data0/images/banner3.png" alt="banner3" title="banner3" id="wows0_2"/></li>
-					<li><img src="data0/images/banner4.png" alt="banner4" title="banner4" id="wows0_3"/></li>
-					<li><img src="data0/images/banner5.png" alt="banner5" title="banner5" id="wows0_4"/></li>
-					<li><img src="data0/images/banner6.png" alt="banner6" title="banner6" id="wows0_5"/></li>
-				</ul></div>
-				<div class="ws_bullets"><div>
-					<a href="#" title="banner1"><span>1</span></a>
-					<a href="#" title="banner2"><span>2</span></a>
-					<a href="#" title="banner3"><span>3</span></a>
-					<a href="#" title="banner4"><span>4</span></a>
-					<a href="#" title="banner5"><span>5</span></a>
-					<a href="#" title="banner6"><span>6</span></a>
-				</div></div>
-			</div>	
-			<script type="text/javascript" src="engine0/wowslider.js"></script>
-			<script type="text/javascript" src="engine0/script.js"></script>
-			<!-- End WOWSlider.com BODY section -->
+		
 		</div>
 	</section>
 	<section class="page-content content-wrap grid">
