@@ -8,6 +8,10 @@
 	width: 90%;
 	color: #fff;
 }
+.primary-service .grid-cell.text button:hover {
+	background: #fff;
+	color: #088CC0;
+}
 .primary-service .grid-cell.text {
 	background: #56CFFF;
 	color: #088CC0;
@@ -34,4 +38,46 @@
 	width: 50%;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.secondary-service h3 {
+	font-size: 24px;
+	/*color: #666666;*/
+    background: #56CFFF;
+    color: #FFF;
+	line-height: 1.2em;
+	border: 2px double #cdcdcd;
+	padding: 20px;
+	margin: 30px auto;
+	font-weight: bold;
+	/*text-align: center;*/
+}
+.secondary-service .service-title {
+	border: 1px solid #ccc;
+	padding: 10px;
+	background: url('../images/accordion-expanded.png') right center;
+}
+.secondary-service .service-title:hover {
+	/*border-color: #088CC0;*/
+	background-color: #CEF6FE;
+    border: 1px solid #088CC0;
+    cursor: pointer;
+}
+.secondary-service .service-content {
+	display: none;	
+	padding: 20px;
+	line-height: 1.2em;
+	border: 1px solid #ccc;
+}
+.secondary-service .service-title.arrRight {
+	background: url('../images/accordion-collapsed.png') right center;
+}
+.secondary-service .service-title,
+.secondary-service .service-title.arrRight {
+	background-repeat: no-repeat;
+	background-size: 10px auto;
+	background-position: 99% 50%;
+}
+.secondary-service .service-title.arrRight {
+	background-color: #CEF6FE;
 }
