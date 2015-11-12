@@ -183,7 +183,8 @@ header .grid {
 	width: 100%;
 }
 header .content-wrap {
-	padding:0  10px;
+	padding:0 1%;
+	width: 98%;
 }
 .logo {
 	font-size: 45px;

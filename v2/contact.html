@@ -109,49 +109,49 @@
 		</div>
 	</section>
 	<section class="in-touch">
-		<form class="content-wrap">
+		<form class="content-wrap" name="contactform" method="post" action="contact.php">
 			<h4>Let us contact You!</h4>
 			<div class="grid two-col">
 				<div class="grid-row text">
-					<div class="grid-cell">First Name</div>
-					<div class="grid-cell">Last Name</div>
+					<label for="first_name" class="grid-cell">First Name</label>
+					<label for="last_name" class="grid-cell">Last Name</label>
 				</div>
 				<div class="grid-row input">
 					<div class="grid-cell">
-						<input required type="text" />
+						<input required type="text" name="first_name" id="first_name" maxlength="50" size="30"/>
 					</div>
 					<div class="grid-cell">
-						<input required type="text" />
+						<input required type="text" name="last_name" id="last_name" maxlength="50" size="30"/>
 					</div>
 				</div>
 				<div class="grid-row text">
-					<div class="grid-cell">Company Name</div>
-					<div class="grid-cell">Phone</div>
+					<label class="grid-cell" for="company">Company Name</label>
+					<label class="grid-cell" for="telephone">Phone</label>
 				</div>
 				<div class="grid-row input">
 					<div class="grid-cell">
-						<input required type="text" />
+						<input required type="text" name="company" id="company"/>
 					</div>
 					<div class="grid-cell">
-						<input required type="tel" />
+						<input required type="tel" name="telephone" id="telephone"/>
 					</div>
 				</div>
 			</div>
 			<div class="grid textarea">
 				<div class="grid-row text">
-					<div class="grid-cell">Email</div>
+					<label for="email" class="grid-cell">Email</label>
 				</div>
 				<div class="grid-row">
 					<div class="grid-cell">
-						<input required type="email" />
+						<input required type="email" name="email" id="email"/>
 					</div>
 				</div>
 				<div class="grid-row text">
-					<div class="grid-cell">Comments</div>
+					<label class="grid-cell" for="comments">Comments</label>
 				</div>
 				<div class="grid-row">
 					<div class="grid-cell">
-						<textarea></textarea>
+						<textarea required id="comments" name="comments"></textarea>
 					</div>
 				</div>
 				<div class="grid-row">
@@ -231,5 +231,10 @@
 			});
 		});
 	</script>
+
+
+
+
+
 </body>
 </html>
