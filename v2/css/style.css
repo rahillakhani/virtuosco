@@ -525,6 +525,9 @@ header .content-wrap {
 	color: #088CC0;
 	line-height: 1.2em;
 }
+.testimonial .grid-cell.client-name i{
+	font-size: 0.8em;
+}
 
 .client-img img{
 	width: 150px;
