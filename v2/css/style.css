@@ -738,7 +738,7 @@ header .content-wrap {
 	float: left;
 }
 footer .grid.content-wrap{
-	width: 100%;
+	width: 99.9%;
 	}
 footer h3 {
 	
@@ -839,6 +839,17 @@ color: #088CC0;
 text-decoration: underline;
 
 }
+footer .nav-link li .horizontal-nav{
+	width: 200px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-right: 50px;
+}
+footer .nav-link li .horizontal-nav .grid-cell a,
+footer .nav-link li .horizontal-nav .grid-cell{
+	/*width: auto;*/
+	padding: 0;
+}
 footer .nav-link li a {
 	font-size: 0.9em;
 	line-height: 2em;
@@ -848,4 +859,17 @@ footer .nav-link li a {
 
 footer.content-wrap .nav-link li{
 	float: left;
+}
+
+
+
+
+
+
+@media screen and (max-width : 768px) {
+	.nav-link li {width: 90px;}
+	.service-box a h3 {line-height: 1.5em;}
+	.secondary-service.content-wrap {
+		padding: 0 30px;
+	}
 }
