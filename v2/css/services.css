@@ -42,23 +42,23 @@
 
 .secondary-service h3 {
 	font-size: 24px;
-	/*color: #666666;*/
     background: #56CFFF;
+    background: #088CC0;
     color: #FFF;
 	line-height: 1.2em;
-	border: 2px double #cdcdcd;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
 	padding: 20px;
 	margin: 30px auto;
 	font-weight: bold;
-	/*text-align: center;*/
 }
 .secondary-service .service-title {
-	border: 1px solid #ccc;
+	border: 1px solid #ededed;
+	border-radius: 3px;
 	padding: 10px;
 	background: url('../images/accordion-expanded.png') right center;
 }
 .secondary-service .service-title:hover {
-	/*border-color: #088CC0;*/
 	background-color: #CEF6FE;
     border: 1px solid #088CC0;
     cursor: pointer;

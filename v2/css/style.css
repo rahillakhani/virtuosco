@@ -177,6 +177,10 @@ input[type=text]:focus, textarea:focus {
 	padding: 5px 0;
 	font-size: 14px;
 }
+.connect .bottom a,
+.connect .bottom {
+	color: #41D7DD;
+}
 
 
 header .grid {
@@ -729,13 +733,49 @@ footer nav.grid-cell {
 	padding-top: 0;
 	padding-bottom: 0;
 }
-footer .grid-cell ul{
-	padding: 0;
+footer .footer-nav div{
+	margin: 25px 0 20px 0;
 }
-footer a{
+footer .footer-nav {
+	padding-left: 5%;
+}
+footer .footer-nav h4{
+	margin-bottom: 10px;
+}
+footer .footer-nav div div{
+	padding-bottom: 7px;
+	padding-left: 5px;
+	margin: 0;
+}
+footer .footer-nav a{
+	/*display: block;*/
+	font-size: 0.9em;
+}
+footer .footer-nav a,
+footer .address-box a{
 	color: #41D7DD;
 	text-decoration: none;
+	}
+footer .address-box a:hover,
+footer .footer-nav a:hover {
+	background: none;
+	color: #088CC0;
+	text-decoration: underline;
+	position: relative;
 }
+footer .footer-nav a:hover::before {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 2px;
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+	background: url(../images/accordion-collapsed.png) no-repeat center;
+	background-size: 8px auto;
+}
+
+/*
 footer .nav-link {
 	margin-top: 40px;
 }
@@ -746,19 +786,14 @@ footer .nav-link li {
 footer a:hover {
 	color: #088CC0;
 }
-/*footer .nav-link li a{}*/
+/*footer .nav-link li a{}* /
 footer .nav-link li a {
 	font-size: 0.9em;
 	line-height: 2em;
 	text-align: center;
 	padding-right: 20%;
 }
-footer .nav-link li a:hover {
-	background: none;
-	color: #088CC0;
-	text-decoration: underline;
-	
-}
+
 footer.content-wrap .nav-link li{
-	/*float: left;*/
-}
+	float: left;
+}*/
