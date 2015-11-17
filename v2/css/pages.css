@@ -39,7 +39,7 @@
 .page-content.content-wrap,
 .page-header .content-wrap
 {
-	max-width: 1100px;
+	/*max-width: 1100px;*/
 }
 .collapsible {
 	overflow: hidden;

@@ -14,4 +14,10 @@ $(document).ready(function() {
 			$(".newsletter").attr('data-content','-');
 		}
 	});
+
+
+	$("#show-drop-nav").bind("mouseenter mouseleave",function(){
+		
+		$(this).find(".drop-nav").toggle();
+	});
 });

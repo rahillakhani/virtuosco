@@ -96,7 +96,7 @@
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
-				$email_to = "lakhani.rj@gmail.com";
+				$email_to = "info@accelegize.com";
 
 				$email_subject = "Your email subject line";
 

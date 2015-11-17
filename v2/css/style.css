@@ -37,11 +37,22 @@ button:hover{
  	text-decoration: none;
 	cursor: pointer;
 	color: #fff;
-	padding: 12px 20px;
+	background: #088CC0;
 	border: 1px solid ;
 	/*font-size: 0.7em;*/
-	background: #088CC0;
+	padding: 12px 20px;
 	display: inline-block;
+}
+.button.white,
+button.white {
+	background: #FFF;
+	color: #088CC0;
+}
+.button.white:hover,
+button.white:hover {
+	color: #088CC0;
+	color: #fff;
+	background: #41D7DD;
 }
 input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
@@ -217,6 +228,7 @@ header .content-wrap {
 .nav-link li {
 	display: inline-block;
 	width: 100px;
+	position: relative;
 }
 
 .nav-link li a {
@@ -226,6 +238,25 @@ header .content-wrap {
 	padding: 7px;
 	color: #088CC0;
 	text-align: center;
+}
+.drop-nav,
+.nav-link li a .drop-nav {
+	position: absolute;
+	right: 0;
+	z-index: 100;
+	display: none;
+	border: 1px solid #088CC0;
+	width: 98%;
+}
+.drop-nav a {
+	background: #FFF;
+	padding: 20px;
+	line-height: 30px !important;
+	
+	border-bottom: 1px solid;
+}
+.drop-nav a:last-child {
+	border-bottom: 0 none;
 }
 
 .nav-link li a:hover {
@@ -541,6 +572,22 @@ header .content-wrap {
 	outline: 0 solid transparent;	
 }
 
+.careers-more {
+	text-align: center;
+	font-size: 1.2em;
+	color: #088CC0;
+	line-height: 1.3em;
+} 
+.careers-more a{
+	color: #41D7DD;
+	text-decoration: none;	
+}
+.careers-more a:hover{
+	background: none;
+	color: #088CC0;
+	text-decoration: underline;
+}
+.careers-more, 
 .in-touch {
 	background: #e8e8e8;
 	padding: 20px;
