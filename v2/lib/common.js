@@ -16,7 +16,7 @@ $(document).ready(function() {
 	});
 
 
-	$("#show-drop-nav").bind("mouseenter mouseleave",function(){
+	$(".show-drop-nav").bind("mouseenter mouseleave",function(){
 		
 		$(this).find(".drop-nav").toggle();
 	});

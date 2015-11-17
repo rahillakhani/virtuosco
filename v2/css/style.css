@@ -822,7 +822,7 @@ footer .footer-nav a:hover::before {
 	background-size: 8px auto;
 }
 
-/*
+
 footer .nav-link {
 	margin-top: 40px;
 }
@@ -833,7 +833,12 @@ footer .nav-link li {
 footer a:hover {
 	color: #088CC0;
 }
-/*footer .nav-link li a{}* /
+footer .nav-link li a:hover {
+background: none;
+color: #088CC0;
+text-decoration: underline;
+
+}
 footer .nav-link li a {
 	font-size: 0.9em;
 	line-height: 2em;
@@ -843,4 +848,4 @@ footer .nav-link li a {
 
 footer.content-wrap .nav-link li{
 	float: left;
-}*/
+}
