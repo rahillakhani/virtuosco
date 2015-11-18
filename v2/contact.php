@@ -84,241 +84,210 @@
 	</section>
 
 	<section class="in-touch">
-		<div class="content-wrap">
+			<div class="content-wrap">
+				<?php
 
+					if(isset($_POST['email'])) {
 
+					// EDIT THE 2 LINES BELOW AS REQUIRED
 
-			<?php
+					$email_to = "info@accelegize.com";
 
-			if(isset($_POST['email'])) {
+					$email_subject = "Your email subject line";
 
+					function died($error) {
 
+						// your error code can go here
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+							echo "We are very sorry, but there were error(s) found with the form you submitted. ";
 
-				$email_to = "info@accelegize.com";
+							echo "These errors appear below.<br /><br />";
 
-				$email_subject = "Your email subject line";
+							echo $error."<br /><br />";
 
+							echo "Please go back and fix these errors.<br /><br />";
 
+							die();
 
+						}
 
+				    	// validation expected data exists
 
-				function died($error) {
+						if(!isset($_POST['first_name']) ||
 
-        // your error code can go here
+							!isset($_POST['last_name']) ||
 
-					echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+							!isset($_POST['email']) ||
 
-					echo "These errors appear below.<br /><br />";
+							!isset($_POST['telephone']) ||
 
-					echo $error."<br /><br />";
+							!isset($_POST['comments'])) {
 
-					echo "Please go back and fix these errors.<br /><br />";
+							died('We are sorry, but there appears to be a problem with the form you submitted.');       
 
-					die();
+						}
 
-				}
 
+						$first_name = $_POST['first_name']; // required
 
+						$last_name = $_POST['last_name']; // required
 
-    // validation expected data exists
+						$email_from = $_POST['email']; // required
 
-				if(!isset($_POST['first_name']) ||
+						$telephone = $_POST['telephone']; // not required
 
-					!isset($_POST['last_name']) ||
+						$comments = $_POST['comments']; // required
 
-					!isset($_POST['email']) ||
+						$error_message = "";
 
-					!isset($_POST['telephone']) ||
+						$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-					!isset($_POST['comments'])) {
+						if(!preg_match($email_exp,$email_from)) {
 
-					died('We are sorry, but there appears to be a problem with the form you submitted.');       
+							$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
 
-			}
+						}
 
+						$string_exp = "/^[A-Za-z .'-]+$/";
 
+						if(!preg_match($string_exp,$first_name)) {
 
-    $first_name = $_POST['first_name']; // required
+							$error_message .= 'The First Name you entered does not appear to be valid.<br />';
 
-    $last_name = $_POST['last_name']; // required
+						}
 
-    $email_from = $_POST['email']; // required
+						if(!preg_match($string_exp,$last_name)) {
 
-    $telephone = $_POST['telephone']; // not required
+							$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
 
-    $comments = $_POST['comments']; // required
+						}
 
+						if(strlen($comments) < 2) {
 
+							$error_message .= 'The Comments you entered do not appear to be valid.<br />';
 
-    $error_message = "";
+						}
 
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+						if(strlen($error_message) > 0) {
 
-    if(!preg_match($email_exp,$email_from)) {
+							died($error_message);
 
-    	$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+						}
 
-    }
+					    $email_message = "Form details below.\n\n";
 
-    $string_exp = "/^[A-Za-z .'-]+$/";
+						function clean_string($string) {
 
-    if(!preg_match($string_exp,$first_name)) {
+							$bad = array("content-type","bcc:","to:","cc:","href");
 
-    	$error_message .= 'The First Name you entered does not appear to be valid.<br />';
+							return str_replace($bad,"",$string);
 
-    }
+						}
+						$email_message .= "First Name: ".clean_string($first_name)."\n";
 
-    if(!preg_match($string_exp,$last_name)) {
+						$email_message .= "Last Name: ".clean_string($last_name)."\n";
 
-    	$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+						$email_message .= "Email: ".clean_string($email_from)."\n";
 
-    }
+						$email_message .= "Telephone: ".clean_string($telephone)."\n";
 
-    if(strlen($comments) < 2) {
+						$email_message .= "Comments: ".clean_string($comments)."\n";
 
-    	$error_message .= 'The Comments you entered do not appear to be valid.<br />';
+						// create email headers
 
-    }
+						$headers = 'From: '.$email_from."\r\n".
 
-    if(strlen($error_message) > 0) {
+						'Reply-To: '.$email_from."\r\n" .
 
-    	died($error_message);
+						'X-Mailer: PHP/' . phpversion();
 
-    }
+						@mail($email_to, $email_subject, $email_message, $headers);
 
-    $email_message = "Form details below.\n\n";
+			    ?>
 
+			    <!-- include your own success html here -->
 
+			    <a class="button" href='http://www.acceligize.com'>Go back to Site</a><br><br>
+			    Thank you for contacting us. We will be in touch with you very soon.
+				<?php
+					}
+				?>
 
-    function clean_string($string) {
-
-    	$bad = array("content-type","bcc:","to:","cc:","href");
-
-    	return str_replace($bad,"",$string);
-
-    }
-
-
-
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-
-    $email_message .= "Comments: ".clean_string($comments)."\n";
-
-
-
-
-
-// create email headers
-
-    $headers = 'From: '.$email_from."\r\n".
-
-    'Reply-To: '.$email_from."\r\n" .
-
-    'X-Mailer: PHP/' . phpversion();
-
-    @mail($email_to, $email_subject, $email_message, $headers);  
-
-    ?>
-
-
-
-    <!-- include your own success html here -->
-
-
-
-
-    <a class="button" href='http://www.acceligize.com'>Go back to Site</a><br><br>
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
-
-
-    <?php
-
-}
-
-?>
-
-</div></section>
-
-
-
-<footer>
-	<div class="grid content-wrap">
-		<div class="grid-row">
-			<div class="grid-cell desc">
-				<h3>Acceligize</h3>
-				<p class="text">
-					Acceligize was founded in 2005<br>
-					by three Indian veterans,<br>
-					intent on offering high technology<br>
-					companies a new option to drive demand<bR>
-					while lowering the cost of sales.
-				</p>
 			</div>
-			<nav class="grid-cell">
-				<ul class="nav-link clearfix">
-					<li>
-						<a href="#">ABOUT</a>
-					</li>
-					<li>
-						<a href="#">SERVICES</a>
-					</li>
-					<li>
-						<a href="#">CAREER</a>
-					</li>
-					<li>
-						<a href="contact.html">CONTACT</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="grid-cell address-box">
-				<h3>Address</h3>
-				<p class="text">3rd Floor, Sai Pearl, <br>
-					Near Bollywood E-Square, <br>
-					Old Mundhwa Road, Kharadi, <br>
-					Pune, Maharashtra - 411014 India
-				</p>
-				<p class="text">
-					<b>Phone</b>: +1-844-295-2907
-				</p>
-				<p class="text">
-					<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
-				</p>
+		</section>
+
+		<footer>
+			<div class="grid content-wrap">
+				<div class="grid-row">
+					<div class="grid-cell desc">
+						<h3>
+							<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
+						</h3>
+						<p class="text">
+							Acceligize was founded in 2005<br>
+							by three Indian veterans,<br>
+							intent on offering high technology<br>
+							companies a new option to drive demand<bR>
+							while lowering the cost of sales.
+						</p>
+					</div>
+					<nav class="grid-cell">
+						<ul class="nav-link clearfix">
+							<li>
+								<a href="about.html">ABOUT</a>
+							</li>
+							<li>
+								<a href="services.html">SERVICES</a>
+								<div class="horizontal-nav grid">
+									<div class="grid-cell"><a href="services.html#mql">MQL</a></div>
+									<div class="grid-cell"><a href="services.html#sql">SQL</a></div>
+									<div class="grid-cell"><a href="services.html#sd">SD</a></div>
+								</div>
+							</li>
+							<li>
+								<a href="career.html">CAREER</a>
+							</li>
+							<li>
+								<a href="contact.html">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="grid-cell address-box">
+						<h3>Address</h3>
+						<p class="text">3rd Floor, Sai Pearl, <br>
+							Near Bollywood E-Square, <br>
+							Old Mundhwa Road, Kharadi, <br>
+							Pune, Maharashtra - 411014 India
+						</p>
+						<p class="text">
+							<b>Phone</b>: +1-844-295-2907
+						</p>
+						<p class="text">
+							<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="connect">
+			<div class="content-wrap tcenter">
+				Copyright &copy and All rights reserved by Acceligize.com <br>
+				<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
 			</div>
 		</div>
-	</div>
-</footer>
-<div class="connect">
-	<div class="content-wrap tcenter">
-		Copyright &copy and All rights reserved by Acceligize.com |  Powered by <a href="#">RahilLakhani</a>.
-	</div>
-</div>
-<script type="text/javascript">
-	$(window).load(function(){
-		$("#header").sticky({ topSpacing: 0 });
-	});
-	$(document).ready(function() {
-		$( "#slideOpen" ).click(function() {
-			if ( $(this).height() != 16)
-				$( this ).animate({ height: 16 }, 1000 );
-			else
-				$( this ).animate({ height: 200 }, 1000 );
+	<script type="text/javascript">
+		$(window).load(function(){
+			$("#header").sticky({ topSpacing: 0 });
 		});
-	});
-</script>
-
-
-
-
+		$(document).ready(function() {
+			$( "#slideOpen" ).click(function() {
+				if ( $(this).height() != 16)
+					$( this ).animate({ height: 16 }, 1000 );
+				else
+					$( this ).animate({ height: 200 }, 1000 );
+			});
+		});
+	</script>
 
 </body>
 </html>

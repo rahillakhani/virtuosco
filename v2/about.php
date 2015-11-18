@@ -188,57 +188,65 @@
 
 
 
-<footer>
-	<div class="grid content-wrap">
-		<div class="grid-row">
-			<div class="grid-cell desc">
-				<h3>Acceligize</h3>
-				<p class="text">
-					Acceligize was founded in 2005<br>
-					by three Indian veterans,<br>
-					intent on offering high technology<br>
-					companies a new option to drive demand<bR>
-					while lowering the cost of sales.
-				</p>
-			</div>
-			<nav class="grid-cell">
-				<ul class="nav-link clearfix">
-					<li>
-						<a href="#">ABOUT</a>
-					</li>
-					<li>
-						<a href="#">SERVICES</a>
-					</li>
-					<li>
-						<a href="#">CAREER</a>
-					</li>
-					<li>
-						<a href="contact.html">CONTACT</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="grid-cell address-box">
-				<h3>Address</h3>
-				<p class="text">3rd Floor, Sai Pearl, <br>
-					Near Bollywood E-Square, <br>
-					Old Mundhwa Road, Kharadi, <br>
-					Pune, Maharashtra - 411014 India
-				</p>
-				<p class="text">
-					<b>Phone</b>: +1-844-295-2907
-				</p>
-				<p class="text">
-					<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
-				</p>
+	<footer>
+		<div class="grid content-wrap">
+			<div class="grid-row">
+				<div class="grid-cell desc">
+					<h3>
+						<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
+					</h3>
+					<p class="text">
+						Acceligize was founded in 2005<br>
+						by three Indian veterans,<br>
+						intent on offering high technology<br>
+						companies a new option to drive demand<bR>
+						while lowering the cost of sales.
+					</p>
+				</div>
+				<nav class="grid-cell">
+					<ul class="nav-link clearfix">
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="services.html">SERVICES</a>
+							<div class="horizontal-nav grid">
+								<div class="grid-cell"><a href="services.html#mql">MQL</a></div>
+								<div class="grid-cell"><a href="services.html#sql">SQL</a></div>
+								<div class="grid-cell"><a href="services.html#sd">SD</a></div>
+							</div>
+						</li>
+						<li>
+							<a href="career.html">CAREER</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="grid-cell address-box">
+					<h3>Address</h3>
+					<p class="text">3rd Floor, Sai Pearl, <br>
+						Near Bollywood E-Square, <br>
+						Old Mundhwa Road, Kharadi, <br>
+						Pune, Maharashtra - 411014 India
+					</p>
+					<p class="text">
+						<b>Phone</b>: +1-844-295-2907
+					</p>
+					<p class="text">
+						<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
+					</p>
+				</div>
 			</div>
 		</div>
+	</footer>
+	<div class="connect">
+		<div class="content-wrap tcenter">
+			Copyright &copy and All rights reserved by Acceligize.com <br>
+			<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
+		</div>
 	</div>
-</footer>
-<div class="connect">
-	<div class="content-wrap tcenter">
-		Copyright &copy and All rights reserved by Acceligize.com |  Powered by <a href="#">RahilLakhani</a>.
-	</div>
-</div>
 <script type="text/javascript">
 	$(window).load(function(){
 		$("#header").sticky({ topSpacing: 0 });

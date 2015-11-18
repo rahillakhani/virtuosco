@@ -314,7 +314,7 @@
 			<div class="grid-row">
 				<div class="grid-cell desc">
 					<h3>
-						<img src="images/logo-acceligize-negative.png" alt=""/>
+						<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
 					</h3>
 					<p class="text">
 						Acceligize was founded in 2005<br>
@@ -324,20 +324,26 @@
 						while lowering the cost of sales.
 					</p>
 				</div>
-				<nav class="grid-cell footer-nav">
-					<div>
-						<h4>SQL</h4>
-						<div><a href="#">Lead Generation & Content Dissemination</a></div>
-						<div><a href="#">Event Registration & Webinar Registration</a></div>
-						<div><a href="#">Account Profiling & Custom Intelligence</a></div>
-						<div><a href="#">Market Research Surveys</a></div>
-						<h4>MQL</h4>
-						<div><a href="#">Appointment Setting & Lead Nurturing.</a></div>
-						<div><a href="#">Confirmed Callback Leads</a></div>
-						<h4>SD</h4>
-						<div><a href="#">Contact List & Verification</a></div>
-						<div><a href="#">CRM cleansing & Appends</a></div>
-					</div>
+				<nav class="grid-cell">
+					<ul class="nav-link clearfix">
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="services.html">SERVICES</a>
+							<div class="horizontal-nav grid">
+								<div class="grid-cell"><a href="services.html#mql">MQL</a></div>
+								<div class="grid-cell"><a href="services.html#sql">SQL</a></div>
+								<div class="grid-cell"><a href="services.html#sd">SD</a></div>
+							</div>
+						</li>
+						<li>
+							<a href="career.html">CAREER</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
 				</nav>
 				<div class="grid-cell address-box">
 					<h3>Address</h3>
@@ -362,19 +368,6 @@
 			<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(window).load(function(){
-			$("#header").sticky({ topSpacing: 0 });
-		});
-		$(document).ready(function() {
-			$( "#slideOpen" ).click(function() {
-				if ( $(this).height() != 16)
-					$( this ).animate({ height: 16 }, 1000 );
-				else
-					$( this ).animate({ height: 200 }, 1000 );
-			});
-		});
-	</script>
 	<script type="text/javascript">
 		google.load("visualization", "1", {packages:["corechart"]});
 		google.setOnLoadCallback(drawChart);
