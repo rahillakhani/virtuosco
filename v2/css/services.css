@@ -64,8 +64,8 @@
     /*font-size: 27px;*/
     line-height: 1em;
     color: #088CC0;
-    
-
+    font-size: 16px;
+    font-weight: bold;
 }
 .secondary-service .collapsable-container {
 	padding: 0 1%;

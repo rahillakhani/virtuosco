@@ -131,15 +131,16 @@
 		<div class="content-wrap">
 			<p>
 				<span style="font-size: 1.32em;">&quot;</span> We don't take campaigns, we fulfill commitments <span style="font-size: 1.32em;">&quot;</span>
+					<p class="text tright">
+						-Team Acceligize
+					</p>
 			</p>
-			<br>
-			<a class="button" href="about.html">Know More</a>
 		</div>
 	</section>
 
 		<section id="slideOpen" class="newsletter">
 		<div class="heading">
-			Offline Chat
+			Offline - Leave a message
 		</div>
 		<form class="content-wrap signUp" name="contactform" method="post" action="contact.php">
 			<div class="grid">
@@ -180,7 +181,7 @@
 				<input value="null" required type="text" name="company" id="company"/>
 				<input value="000" required type="tel" name="telephone" id="telephone"/>
 			</div>
-			<input class="button" type="submit" value="Get Now"/>
+			<input class="button" type="submit" value="Submit"/>
 		</form>
 	</section>
 		<footer>
@@ -192,10 +193,7 @@
 					</h3>
 					<p class="text">
 						Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
-					</p><br>
-					<!-- <p>
-						<button class="white">MediaKit Download</button>
-					</p> -->
+					</p>
 				</div>
 				<nav class="grid-cell links">
 					<ul class="nav-link clearfix">
@@ -243,78 +241,16 @@
 	<div class="connect">
 		<div class="content-wrap tcenter">
 			Copyright &copy and All rights reserved by Acceligize.com <br>
-			<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
+			<div class="bottom hidden-for-submission">Designed by <a href="#">RahilLakhani</a></div>
 		</div>
 	</div>
 	<script type="text/javascript">
-		$(window).load(function(){
-			$("#header").sticky({ topSpacing: 0 });
-		});
-		$(document).ready(function() {
-			var owl = $("#owl-demo");
-			owl.owlCarousel({
-				autoPlay : true,
-				autoplayTimeout : 1000,
-				autoplayHoverPause : true,
-				animateOut : true,
-				animateIn : true,
-				items: 3,
-				itemsDesktop : [1199,3],
-				itemsDesktopSmall : [980,3],
-				itemsTablet: [768,2],
-				itemsTabletSmall: false,
-				itemsMobile : [479,1],
-				singleItem : false,
-				itemsScaleUp : true,
-				slideSpeed : 300,
-				stopOnHover : true,
-				navigation : false,
-				navigationText : false,
-				pagination : false,
-				responsive : true,
-				lazyLoad : true,
-				mouseDrag : false,
-				touchDrag : true,
-				rewindNav : true,
-				loop: true
-
-			});
-			$(".next").click(function(){
-				owl.trigger('owl.next');
-			});
-			$(".prev").click(function(){
-				owl.trigger('owl.prev');
-			});
-
-			$("#prev_btn").hover(function(){
-				defSrc = $(this).src;
-				this.src="images/arr-left-slide-m_hover.png";
-			},function(){
-				this.src="images/arr-left-slide-m.png";
-			});
-			$("#next_btn").hover(function(){
-				defSrc = $(this).src;
-				this.src="images/arr-right-slide-m_hover.png";
-			},function(){
-				this.src="images/arr-right-slide-m.png";
-			});
-			
-
-
-
-			
-			$(".service-title").click(function () {
-
-				$header = $(this);
-			    //getting the next element
-			    $content = $header.next();
-			    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-			    $content.slideToggle(500, function () {
-			        //execute this after slideToggle is done
-			        //change text of header based on visibility of content div
-			        $header.toggleClass("arrRight");
+		$(".service-title").click(function () {
+			$header = $(this);
+		    $content = $header.next();
+		    $content.slideToggle(500, function () {
+		        $header.toggleClass("arrRight");
 			    });
-
 			});
 		});
 	</script>

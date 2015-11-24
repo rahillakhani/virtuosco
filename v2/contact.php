@@ -229,10 +229,7 @@
 					</h3>
 					<p class="text">
 						Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
-					</p><br>
-					<!-- <p>
-						<button class="white">MediaKit Download</button>
-					</p> -->
+					</p>
 				</div>
 				<nav class="grid-cell links">
 					<ul class="nav-link clearfix">
@@ -280,7 +277,7 @@
 		<div class="connect">
 			<div class="content-wrap tcenter">
 				Copyright &copy and All rights reserved by Acceligize.com <br>
-				<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
+				<div class="bottom hidden-for-submission">Designed by <a href="#">RahilLakhani</a></div>
 			</div>
 		</div>
 	<script type="text/javascript">

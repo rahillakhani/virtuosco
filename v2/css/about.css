@@ -1,20 +1,6 @@
 .data-download {
 	margin-bottom: 40px;
 }
-h4.data-download-title,
-.content-wrap > h4 {
-	font-size: 24px;
-	color: #666666;
-	line-height: 36px;
-	font-weight: normal;
-	border-bottom: 4px double #cdcdcd;
-	padding: 20px;
-	margin: 10px auto 50px auto;
-	font-weight: bold;
-	min-width: 200px;
-	display: table;
-	text-align: center;
-}
 .about-banner {
 	/*background: #41D7DD;*/
 	background: #088CC0;
@@ -99,27 +85,9 @@ h4.data-download-title,
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
-.data-download-title {
-	margin-top: 50px;
-}
-.data-download .grid{
-	width: 100%;
-}
-.data-download .grid-cell{
-	width: 50%;
-}
-.data-download .grid-cell rect{
-	fill:none;
-}
-.data-download .grid-cell .legends .bold{
-	display: block;
-	padding: 7px;
-}
+
 .data-download .grid-cell.chart #piechart{
 	margin: 0 auto;
-}
-.data-download .grid-cell {
-	background:url('../images/chart_bg.png');
 }
 .data-download .grid-cell .legends li {
 	padding: 4px 0;
@@ -131,4 +99,10 @@ h4.data-download-title,
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	margin: 0 7px;
+}
+
+@media screen and (max-width : 768px) {
+	.data-download .grid-cell.chart {
+		width: 300px;
+	}
 }

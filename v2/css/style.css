@@ -332,7 +332,7 @@ header .content-wrap {
 	padding: 10px;
 }
 .hidden-for-submission	 {
-	position: absolute;
+	position: fixed;
 	top: 100%
 }
 .content-text {
@@ -482,7 +482,7 @@ header .content-wrap {
 
 .know-more {
 	background: #e8e8e8;
-	margin: 20px 0 40px 0;
+	margin: 40px 0 40px 0;
 	font-size: 1.4em;
 	padding: 2em;
 	text-align: center;
@@ -575,7 +575,7 @@ header .content-wrap {
 
 
 .testimonial {
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 }
 .testimonial h3{
@@ -713,35 +713,6 @@ header .content-wrap {
 	background: #fff;
 }
 
-
-
-
-
-
-
-#owl-demo .item:hover{
-    background: #CEF6FE;
-	border: 1px solid #088CC0;
-}
-#owl-demo .item{
-    margin: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-	color: initial;
-	text-decoration: none;
-	border: 1px solid #cdcdcd;
-	
-    
-}
-#owl-demo .item .grid-cell {
-    font-size: 1em;
-    line-height: 1.1em;
-    font-family: 'Raleway';
-    color: #088CC0;
-	
-}
 .service-ticker {
 	padding: 0 30px;
 	position: relative;
@@ -896,6 +867,72 @@ footer .nav-link li .horizontal-nav .grid-cell a:before{
 	background-size: 8px auto;
 }
 
+
+h4.data-download-title,
+.content-wrap > h4 {
+	font-size: 24px;
+	color: #666666;
+	line-height: 36px;
+	font-weight: normal;
+	border-bottom: 4px double #cdcdcd;
+	padding: 20px;
+	margin: 10px auto 50px auto;
+	font-weight: bold;
+	min-width: 200px;
+	display: table;
+	text-align: center;
+}
+.data-download-title {
+	margin-top: 50px;
+}
+.data-download .grid{
+	width: 100%;
+}
+.data-download .grid-cell{
+	/*width: 50%;*/
+	padding: 10px;
+}
+.data-download .grid-cell.chart{
+	width: 450px;
+}
+.data-download .grid-cell.chart .data-cover{
+	border: 2px solid #1D85BB;
+	margin: 10px 0;
+	background-color: #fff;
+	margin-right: 20px;
+	font-size: 13px;
+}
+.data-download .grid-cell.chart .data-cover .data-details{
+	background: #1D85BB;
+	padding: 4px;
+	text-align: center;
+	display: inline-block;
+	color: #FFF;
+}
+.data-download .grid-cell.chart .data-cover .data-details.forty{
+	width: 40%;
+}
+.data-download .grid-cell.chart .data-cover .data-details.twenty-one{
+	width: 21%;
+}
+.data-download .grid-cell.chart .data-cover .data-details.nineteen{
+	width: 19%;
+}
+.data-download .grid-cell.chart .data-cover .data-details.twelve{
+	width: 12%;
+}
+.data-download .grid-cell.chart .data-cover .data-details.eight{
+	width: 8%;
+}
+
+.data-download .grid-cell rect{
+	fill:none;
+}
+.data-download .grid-cell .legends .bold{
+	display: block;
+	padding: 7px;
+}
+
 footer .nav-link li .horizontal-nav .grid-cell a,
 footer .nav-link li .horizontal-nav .grid-cell{
 	/*width: auto;*/
@@ -923,5 +960,8 @@ footer.content-wrap .nav-link li{
 	.service-box a h3 {line-height: 1.5em;}
 	.secondary-service.content-wrap {
 		padding: 0 30px;
+	}
+	.data-download .grid-cell.chart {
+		width: 300px;
 	}
 }
