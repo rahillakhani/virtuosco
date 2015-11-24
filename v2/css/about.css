@@ -1,3 +1,6 @@
+.data-download {
+	margin-bottom: 40px;
+}
 h4.data-download-title,
 .content-wrap > h4 {
 	font-size: 24px;
@@ -34,11 +37,39 @@ h4.data-download-title,
 	margin-top:0;
 	line-height: 1em;
 }
-.team {
+.our-team .teams{
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.our-team .teams .grid-row:first-child .grid-cell {
+	/*border-bottom: 0 none;*/
+	border-top: 1px solid #088CC0;
+}
+.our-team .teams .grid-cell p{
+	padding: 0 3%;
+}
+.our-team .teams .grid-cell{
+	width: 30%;
+	vertical-align: top;
+	border-bottom: 1px solid #088CC0;
+}
+.our-team .teams h5 b{
+	font-size: 15px;
+}
+.our-team .teams h5{
+	line-height: 1em;
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	color: #088CC0;
+	padding: 0 1%;
+}
+/*.team {
 	width: 575px;
 	max-width: 100%;
 	margin: 0 auto;
-}
+}*/
 .need-us {
 	width: 100%;
 }

@@ -225,6 +225,9 @@ header .content-wrap {
 .is-sticky .nav-wrapper{
 	border-bottom: 1px solid #00D3FF;
 }
+.link-bg {
+	background: #088CC0;
+}
 .nav-link li {
 	display: inline-block;
 	width: 100px;
@@ -246,7 +249,7 @@ header .content-wrap {
 	z-index: 100;
 	display: none;
 	border: 1px solid #088CC0;
-	width: 98%;
+	width: 200px;
 }
 .drop-nav a {
 	background: #FFF;
@@ -482,8 +485,7 @@ header .content-wrap {
 }
 .mission-text-wrapper .grid-cell.pad-right-zero p{
 	padding-right: 2%;
-}	
-
+}
 .mission-text-wrapper .grid-cell.needus h3{
 	color: #FFF;
 	}
@@ -527,6 +529,26 @@ header .content-wrap {
 	line-height: 1em;
 	color: #088CC0;
 }
+
+
+
+.need-us .grid-cell{
+	padding: 10px;
+	
+}
+/*.team .text,*/
+.need-us .text{
+	/*padding-left: 15px;*/
+	padding-right: 20px;
+}
+.need-us .image,
+.need-us .image img{
+	width:60px;
+}
+.need-us .image{
+	border-right: 1px solid #69E5FF;
+}
+
 
 .testimonial {
 	margin-top: 50px;
@@ -757,6 +779,9 @@ footer .grid-cell {
 	vertical-align: top;
 	padding: 30px 0;
 }
+footer .grid-cell.links {
+	vertical-align: middle;
+}
 footer .grid-cell.desc {
 	background: #088CC0;
 	color: #fff;
@@ -840,10 +865,9 @@ text-decoration: underline;
 
 }
 footer .nav-link li .horizontal-nav{
-	width: 200px;
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
-	padding-right: 50px;
+	/*padding-right: 50px;*/
 }
 footer .nav-link li .horizontal-nav .grid-cell a{
 	border-top: 1px solid #088CC0;

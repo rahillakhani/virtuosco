@@ -49,14 +49,23 @@
 	border: 1px solid #cdcdcd;
 	border-radius: 4px;
 	padding: 20px;
-	margin: 30px auto;
+	margin: 30px auto 10px auto;
 	font-weight: bold;
 }
 .secondary-service .service-title {
-	border: 1px solid #ededed;
-	border-radius: 3px;
+	border: 1px solid #fff;
+	/*border-radius: 3px;*/
 	padding: 10px;
 	background: url('../images/accordion-expanded.png') right center;
+	border-bottom: 1px solid #ccc;
+    /*font-size: 27px;*/
+    line-height: 1em;
+    color: #088CC0;
+    
+
+}
+.secondary-service .collapsable-container {
+	padding: 0 1%;
 }
 .secondary-service .service-title:hover {
 	background-color: #CEF6FE;
