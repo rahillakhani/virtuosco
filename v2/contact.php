@@ -234,12 +234,12 @@
 				
 				<nav class="grid-cell footer-nav">
 					<div>
-						<h4>Marketing Qualified Lead</h4>
+						<h4>Marketing Qualified Leads</h4>
 						<div><a href="#">Lead Generation & Content Dissemination</a></div>
 						<div><a href="#">Event Registration & Webinar Registration</a></div>
 						<div><a href="#">Account Profiling & Custom Intelligence</a></div>
 						<div><a href="#">Market Research Surveys</a></div>
-						<h4>Sales Qulified Lead</h4>
+						<h4>Sales Qulified Leads</h4>
 						<div><a href="#">Appointment Setting & Lead Nurturing.</a></div>
 						<div><a href="#">Confirmed Callback Leads</a></div>
 						<h4>Supreme Data</h4>
@@ -255,15 +255,14 @@
 						Pune, Maharashtra - 411014 India
 					</p>
 					<p class="text">
-						<b>Phone</b>: +1-844-295-2907
-					</p>
-					<p class="text">
+						<b>Phone</b>: +1-844-295-2907<br>
 						<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
 					</p>
-					<p class="text">
+					<p class="text" style="padding-top:5px;">
 						<h3>Web Products</h3>
-						TechInfoBridge.com<br>
-						B2B-Broadcast.com
+						
+						<a href="www.techinfobridge.com" style="padding-bottom: 7px; display: block;">TechInfoBridge.com</a>
+						<a href="www.b2b-broadcast.com">B2B-Broadcast.com</a>
 					</p>
 				</div>
 			</div>
