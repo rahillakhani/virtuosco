@@ -40,6 +40,9 @@
 	text-align: center;
 }
 
+.secondary-service {
+	margin: 50px auto;
+}
 .secondary-service h3 {
 	font-size: 24px;
     background: #56CFFF;

@@ -10,17 +10,7 @@ $(document).ready(function() {
 	
 	$( "#slideOpen .heading" ).click(function() {
 		$( "#slideOpen .signUp" ).toggle("fast");
-		$(".newsletter").toggleClass("expanded");
-		
-		console.log("expand");
-	// 	if ( $(this).height() != 16){
-	// 		$( this ).animate({ height: 16 }, 1000 );
-	// 		$(".newsletter").attr('data-content','+');
-	// 	}
-	// 	else{
-	// 		$( this ).animate({ height: 200 }, 1000 );
-	// 		$(".newsletter").attr('data-content','-');
-	// 	}
+		$(".newsletter").toggleClass("expanded");		
 	});
 
 	$(".show-drop-nav").find(".drop-nav",function(){
