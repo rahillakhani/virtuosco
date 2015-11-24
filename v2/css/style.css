@@ -280,11 +280,10 @@ header .content-wrap {
 	padding: 20px 0 20px 0;
 }
 
-.newsletter {
+.newsletter{
 	position: fixed;
 	right: 1%;
 	bottom: 0;
-	padding: 10px;
 	width: 200px;
 	text-align: center;
 	z-index: 1000;
@@ -292,7 +291,7 @@ header .content-wrap {
 	border: 1px solid  #41D7DD;
 	border-bottom: 0 none;
 	color: #fff;
-	height: 16px;
+	/*height: 16px;*/
 /*	background: #e8e8e8;
 	color: #088CC0;
 	
@@ -310,6 +309,31 @@ header .content-wrap {
 	content: attr(data-content);
 	font-size: 1.1em;
 	font-weight: bold;
+}
+.newsletter.expanded:after {
+	content:"-";
+}
+.signUp {
+	padding-top: 20px;
+	color: #FFF;
+	line-height: 1.5em;
+	padding: 10px;
+}
+.signUp textarea,
+.signUp input{
+	width: 97%;
+	margin: 3px 1%;
+}
+.signUp .button{
+	width: 150px;
+	padding: 10px;
+}
+.newsletter .heading{
+	padding: 10px;
+}
+.hidden-for-submission	 {
+	position: absolute;
+	top: 100%
 }
 .content-text {
 	padding-left: 20px;
