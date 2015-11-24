@@ -231,26 +231,21 @@
 						Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
 					</p>
 				</div>
-				<nav class="grid-cell links">
-					<ul class="nav-link clearfix">
-						<li>
-							<a href="about.html">ABOUT</a>
-						</li>
-						<li>
-							<a href="services.html">SERVICES</a>
-							<div class="horizontal-nav grid">
-								<div class="grid-cell"><a href="services.html#mql">Marketing Qualified Leads</a></div>
-								<div class="grid-cell"><a href="services.html#sql">Sales Qualified Leads</a></div>
-								<div class="grid-cell"><a href="services.html#sd">Supreme<br> Data</a></div>
-							</div>
-						</li>
-						<li>
-							<a href="career.html">CAREER</a>
-						</li>
-						<li>
-							<a href="contact.html">CONTACT</a>
-						</li>
-					</ul>
+				
+				<nav class="grid-cell footer-nav">
+					<div>
+						<h4>Marketing Qualified Lead</h4>
+						<div><a href="#">Lead Generation & Content Dissemination</a></div>
+						<div><a href="#">Event Registration & Webinar Registration</a></div>
+						<div><a href="#">Account Profiling & Custom Intelligence</a></div>
+						<div><a href="#">Market Research Surveys</a></div>
+						<h4>Sales Qulified Lead</h4>
+						<div><a href="#">Appointment Setting & Lead Nurturing.</a></div>
+						<div><a href="#">Confirmed Callback Leads</a></div>
+						<h4>Supreme Data</h4>
+						<div><a href="#">Contact List & Verification</a></div>
+						<div><a href="#">CRM cleansing & Appends</a></div>
+					</div>
 				</nav>
 				<div class="grid-cell address-box">
 					<h3>Address</h3>
