@@ -15,7 +15,11 @@ $(document).ready(function() {
 		}
 	});
 
-
+	$(".show-drop-nav").find(".drop-nav",function(){
+		if($(".drop-nav")){
+			$(".drop-nav").hide();
+		}
+	});
 	$(".show-drop-nav").bind("mouseenter mouseleave",function(){
 		
 		$(this).find(".drop-nav").toggle(

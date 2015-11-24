@@ -60,8 +60,13 @@
 								<li>
 									<a href="about.html">ABOUT</a>
 								</li>
-								<li>
+								<li class="show-drop-nav">
 									<a href="services.html">SERVICES</a>
+									<div class="drop-nav">
+										<a href="services.html#mql">Marketing Qualified Leads</a>
+										<a href="services.html#sql">Sales Qualified Leads</a>
+										<a href="services.html#sd">Supreme Data</a>
+									</div>
 								</li>
 								<li>
 									<a href="career.html">CAREER</a>
@@ -82,12 +87,8 @@
 			<p>Get back to main site to Know More.</p>
 		</div>
 	</section>
-
 	<section class="in-touch">
 		<div class="content-wrap">
-
-
-
 			<?php
 
 			if(isset($_POST['email'])) {
@@ -119,75 +120,72 @@
 					!isset($_POST['company'])) {
 					died('We are sorry, but there appears to be a problem with the form you submitted.');
 			}
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // required
-    $job_title = $_POST['job_title']; // required
-    $company = $_POST['company']; // required
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    if(!preg_match($email_exp,$email_from)) {
-    	$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-    }
+		    $first_name = $_POST['first_name']; // required
+		    $last_name = $_POST['last_name']; // required
+		    $email_from = $_POST['email']; // required
+		    $telephone = $_POST['telephone']; // required
+		    $job_title = $_POST['job_title']; // required
+		    $company = $_POST['company']; // required
+		    $error_message = "";
+		    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+		    if(!preg_match($email_exp,$email_from)) {
+		    	$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+		    }
 
-    $string_exp = "/^[A-Za-z .'-]+$/";
+		    $string_exp = "/^[A-Za-z .'-]+$/";
 
-    if(!preg_match($string_exp,$first_name)) {
-    	$error_message .= 'The First Name you entered does not appear to be valid.<br />';
-    }
+		    if(!preg_match($string_exp,$first_name)) {
+		    	$error_message .= 'The First Name you entered does not appear to be valid.<br />';
+		    }
 
-    if(!preg_match($string_exp,$last_name)) {
-    	$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-    }
+		    if(!preg_match($string_exp,$last_name)) {
+		    	$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+		    }
 
-    if(strlen($company) < 2) {
-    	$error_message .= 'The Job details you entered do not appear to be valid.<br />';
-    }
-    if(strlen($job_title) < 2) {
-    	$error_message .= 'The Job details you entered do not appear to be valid.<br />';
-    }
+		    if(strlen($company) < 2) {
+		    	$error_message .= 'The Job details you entered do not appear to be valid.<br />';
+		    }
+		    if(strlen($job_title) < 2) {
+		    	$error_message .= 'The Job details you entered do not appear to be valid.<br />';
+		    }
 
-    if(strlen($error_message) > 0) {
-    	died($error_message);
-    }
+		    if(strlen($error_message) > 0) {
+		    	died($error_message);
+		    }
 
-    $email_message = "Form details below.\n\n";
+		    $email_message = "Form details below.\n\n";
 
-    function clean_string($string) {
-    	$bad = array("content-type","bcc:","to:","cc:","href");
-    	return str_replace($bad,"",$string);
-    }
+		    function clean_string($string) {
+		    	$bad = array("content-type","bcc:","to:","cc:","href");
+		    	return str_replace($bad,"",$string);
+		    }
 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-    $email_message .= "Job Title: ".clean_string($job_title)."\n";
-    $email_message .= "Company: ".clean_string($company)."\n";
-
-
-// create email headers
-
-    $headers = 'From: '.$email_from."\r\n".
-    'Reply-To: '.$email_from."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);  
-    ?>
-
-    <!-- include your own success html here -->
-    <a class="button" href='http://www.acceligize.com'>Go back to Site</a><br><br>
-    <a class="button" href='http://www.acceligize.com/abc.pdf'>Download</a><br><br>
-    Thank you for contacting us. We will be in touch with you very soon.
-    <?php
-}
-?>
-
-</div>
-</section>
+		    $email_message .= "First Name: ".clean_string($first_name)."\n";
+		    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+		    $email_message .= "Email: ".clean_string($email_from)."\n";
+		    $email_message .= "Telephone: ".clean_string($telephone)."\n";
+		    $email_message .= "Job Title: ".clean_string($job_title)."\n";
+		    $email_message .= "Company: ".clean_string($company)."\n";
 
 
+		// create email headers
 
+		    $headers = 'From: '.$email_from."\r\n".
+		    'Reply-To: '.$email_from."\r\n" .
+		    'X-Mailer: PHP/' . phpversion();
+		    @mail($email_to, $email_subject, $email_message, $headers);  
+		    ?>
+
+		    <!-- include your own success html here -->
+		    <a class="button" href='http://www.acceligize.com'>Go back to Site</a><br><br>
+		    <a class="button" href='http://www.acceligize.com/abc.pdf'>Download</a><br><br>
+		    Thank you for contacting us. We will be in touch with you very soon.
+		<?php
+		}
+		?>
+
+		</div>
+	</section>
 	<footer>
 		<div class="grid content-wrap">
 			<div class="grid-row">
@@ -196,10 +194,10 @@
 						<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
 					</h3>
 					<p class="text">
-												Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
-					</p>
+						Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
+					</p><br>
 				</div>
-				<nav class="grid-cell">
+				<nav class="grid-cell links">
 					<ul class="nav-link clearfix">
 						<li>
 							<a href="about.html">ABOUT</a>
@@ -207,9 +205,9 @@
 						<li>
 							<a href="services.html">SERVICES</a>
 							<div class="horizontal-nav grid">
-								<div class="grid-cell"><a href="services.html#mql">MQL</a></div>
-								<div class="grid-cell"><a href="services.html#sql">SQL</a></div>
-								<div class="grid-cell"><a href="services.html#sd">SD</a></div>
+								<div class="grid-cell"><a href="services.html#mql">Marketing Qualified Leads</a></div>
+								<div class="grid-cell"><a href="services.html#sql">Sales Qualified Leads</a></div>
+								<div class="grid-cell"><a href="services.html#sd">Supreme<br> Data</a></div>
 							</div>
 						</li>
 						<li>
@@ -233,6 +231,11 @@
 					<p class="text">
 						<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
 					</p>
+					<p class="text">
+						<h3>Web Products</h3>
+						TechInfoBridge.com<br>
+						B2B-Broadcast.com
+					</p>
 				</div>
 			</div>
 		</div>
@@ -243,23 +246,18 @@
 			<div class="bottom">Designed by <a href="#">RahilLakhani</a></div>
 		</div>
 	</div>
-<script type="text/javascript">
-	$(window).load(function(){
-		$("#header").sticky({ topSpacing: 0 });
-	});
-	$(document).ready(function() {
-		$( "#slideOpen" ).click(function() {
-			if ( $(this).height() != 16)
-				$( this ).animate({ height: 16 }, 1000 );
-			else
-				$( this ).animate({ height: 200 }, 1000 );
+	<script type="text/javascript">
+		$(window).load(function(){
+			$("#header").sticky({ topSpacing: 0 });
 		});
-	});
-</script>
-
-
-
-
-
+		$(document).ready(function() {
+			$( "#slideOpen" ).click(function() {
+				if ( $(this).height() != 16)
+					$( this ).animate({ height: 16 }, 1000 );
+				else
+					$( this ).animate({ height: 200 }, 1000 );
+			});
+		});
+	</script>
 </body>
 </html>

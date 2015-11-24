@@ -60,8 +60,13 @@
 								<li>
 									<a href="about.html">ABOUT</a>
 								</li>
-								<li>
+								<li class="show-drop-nav">
 									<a href="services.html">SERVICES</a>
+									<div class="drop-nav">
+										<a href="services.html#mql">Marketing Qualified Leads</a>
+										<a href="services.html#sql">Sales Qualified Leads</a>
+										<a href="services.html#sd">Supreme Data</a>
+									</div>
 								</li>
 								<li>
 									<a href="career.html">CAREER</a>
@@ -215,60 +220,63 @@
 
 			</div>
 		</section>
-
-		<footer>
-			<div class="grid content-wrap">
-				<div class="grid-row">
-					<div class="grid-cell desc">
-						<h3>
-							<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
-						</h3>
-						<p class="text">
-							Acceligize was founded in 2005<br>
-							by three Indian veterans,<br>
-							intent on offering high technology<br>
-							companies a new option to drive demand<bR>
-							while lowering the cost of sales.
-						</p>
-					</div>
-					<nav class="grid-cell">
-						<ul class="nav-link clearfix">
-							<li>
-								<a href="about.html">ABOUT</a>
-							</li>
-							<li>
-								<a href="services.html">SERVICES</a>
-								<div class="horizontal-nav grid">
-									<div class="grid-cell"><a href="services.html#mql">MQL</a></div>
-									<div class="grid-cell"><a href="services.html#sql">SQL</a></div>
-									<div class="grid-cell"><a href="services.html#sd">SD</a></div>
-								</div>
-							</li>
-							<li>
-								<a href="career.html">CAREER</a>
-							</li>
-							<li>
-								<a href="contact.html">CONTACT</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="grid-cell address-box">
-						<h3>Address</h3>
-						<p class="text">3rd Floor, Sai Pearl, <br>
-							Near Bollywood E-Square, <br>
-							Old Mundhwa Road, Kharadi, <br>
-							Pune, Maharashtra - 411014 India
-						</p>
-						<p class="text">
-							<b>Phone</b>: +1-844-295-2907
-						</p>
-						<p class="text">
-							<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
-						</p>
-					</div>
+			<footer>
+		<div class="grid content-wrap">
+			<div class="grid-row">
+				<div class="grid-cell desc">
+					<h3>
+						<a href="/"><img src="images/logo-acceligize-negative.png" alt=""/></a>
+					</h3>
+					<p class="text">
+						Acceligize is a multi-channel, technology enabled B2B marketing company. Founded in early 2015 and established by first generation entrepreneurs, an Indian duo of experts in online business marketing. Acceligize provides various revenue accelerating services, driven through strong data and content analytics, it is  the fastest growing B2B lead generation provider in its era.
+					</p><br>
+					<!-- <p>
+						<button class="white">MediaKit Download</button>
+					</p> -->
+				</div>
+				<nav class="grid-cell links">
+					<ul class="nav-link clearfix">
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="services.html">SERVICES</a>
+							<div class="horizontal-nav grid">
+								<div class="grid-cell"><a href="services.html#mql">Marketing Qualified Leads</a></div>
+								<div class="grid-cell"><a href="services.html#sql">Sales Qualified Leads</a></div>
+								<div class="grid-cell"><a href="services.html#sd">Supreme<br> Data</a></div>
+							</div>
+						</li>
+						<li>
+							<a href="career.html">CAREER</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="grid-cell address-box">
+					<h3>Address</h3>
+					<p class="text">3rd Floor, Sai Pearl, <br>
+						Near Bollywood E-Square, <br>
+						Old Mundhwa Road, Kharadi, <br>
+						Pune, Maharashtra - 411014 India
+					</p>
+					<p class="text">
+						<b>Phone</b>: +1-844-295-2907
+					</p>
+					<p class="text">
+						<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
+					</p>
+					<p class="text">
+						<h3>Web Products</h3>
+						TechInfoBridge.com<br>
+						B2B-Broadcast.com
+					</p>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 		<div class="connect">
 			<div class="content-wrap tcenter">
 				Copyright &copy and All rights reserved by Acceligize.com <br>

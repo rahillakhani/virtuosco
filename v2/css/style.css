@@ -878,7 +878,7 @@ footer .nav-link li .horizontal-nav .grid-cell a:before{
 	content: "";
 	position: absolute;
 	right: 45%;
-	bottom: 95%;
+	bottom: 97%;
 	width: 10px;
 	height: 10px;
 	margin-right: 3px;
@@ -896,7 +896,7 @@ footer .nav-link li a {
 	font-size: 0.9em;
 	line-height: 2em;
 	text-align: center;
-	padding-right: 20%;
+	/*padding-right: 20%;*/
 }
 
 footer.content-wrap .nav-link li{
