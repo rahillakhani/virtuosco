@@ -791,6 +791,12 @@ footer .grid-cell.desc ,
 footer .grid-cell.address-box {
 	padding-left: 5%;
 }
+
+div.grid-cell.address-box > p:nth-child(2) {
+	font-size: 0.85em;
+	line-height: 1.2em;
+}
+
 footer nav.grid-cell {
 	padding-top: 0;
 	padding-bottom: 0;
