@@ -274,13 +274,8 @@
 	</footer>
 		<div class="connect">
 			<div class="content-wrap tcenter">
-<<<<<<< HEAD
-				Copyright &copy and All rights reserved by Acceligize.com <br>
-				<div class="bottom hidden-for-submission">Designed by <a href="https://www.linkedin.com/profile/view?id=AAMAAA8hHaABpOGR677ylii2tNmPb9Mm1LnF6gI&trk">RahilLakhani</a></div>
-=======
 				Copyright &copy and All rights reserved by Acceligize.com | <a href="privacy.html">Privacy Policy</a><br>
-				<div class="bottom hidden-for-submission">Designed by <a href="#">RahilLakhani</a></div>
->>>>>>> origin/master
+				<div class="bottom hidden-for-submission">Designed by <a href="https://www.linkedin.com/profile/view?id=AAMAAA8hHaABpOGR677ylii2tNmPb9Mm1LnF6gI&trk">RahilLakhani</a></div>
 			</div>
 		</div>
 	<script type="text/javascript">
