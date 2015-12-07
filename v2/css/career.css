@@ -27,3 +27,7 @@
 	color: #41D7DD;
 	background: none;
 }
+body > section.page-content.content-wrap > div:nth-child(1) > p,
+body > section.page-content.content-wrap > div:nth-child(2) > p {
+	padding-left: 20px;
+}

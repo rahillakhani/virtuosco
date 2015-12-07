@@ -772,6 +772,10 @@ footer .grid-cell {
 footer .grid-cell.links {
 	vertical-align: middle;
 }
+footer .grid-cell.desc h3,
+footer .grid-cell.address-box h3 {
+	margin-top: 0;
+}
 footer .grid-cell.desc {
 	background: #088CC0;
 	color: #fff;
@@ -791,8 +795,12 @@ footer .grid-cell.desc ,
 footer .grid-cell.address-box {
 	padding-left: 5%;
 }
+footer .grid-cell.address-box {
+	padding-bottom: 15px;
+}
 
-div.grid-cell.address-box > p:nth-child(2) {
+div.grid-cell.address-box > p:nth-child(2),
+div.grid-cell.address-box > p:nth-child(3) {
 	font-size: 0.85em;
 	line-height: 1.2em;
 }
