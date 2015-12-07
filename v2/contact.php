@@ -34,16 +34,16 @@
 			<div class="grid content-wrap">
 				<div class="grid-row">
 					<div class="grid-cell">
-						<a href="contact.html#map" class="fa fa-map-marker fb" title="facebook"></a>
+						<a href="contact.html#map" target="_blank" class="fa fa-map-marker fb" title="facebook"></a>
 						<i class="fa fa-phone"></i><span> 1 844 295 2907</span>
 					</div>
 					<div class="grid-cell tright">
 
-						<a href="https://www.facebook.com/Acceligize" class="fa fa-facebook fb" title="facebook"></a>
-						<a href="https://www.twitter.com" class="fa fa-twitter tw" title="twitter"></a>
-						<a href="https://www.linkedin.com/company/4812648" class="fa fa-linkedin gp" title="linkedin"></a>
-						<a href="https://www.linkedin.com/company/4812648" class="fa fa-google-plus gp" title="google-plus"></a>
-						<a href="mailto:info@Acceligize.com" class="fa fa-envelope-o em" title="email"></a>
+						<a href="https://www.facebook.com/Virtuosco" target="_blank" class="fa fa-facebook fb" title="facebook"></a>
+						<a href="https://twitter.com/AcceligizeB2B" target="_blank" class="fa fa-twitter tw" title="twitter"></a>
+						<a href="https://www.linkedin.com/company/4812648" target="_blank" class="fa fa-linkedin gp" title="linkedin"></a>
+						<a href="https://plus.google.com/b/117409483318383925058/117409483318383925058/about?gmbpt=true&hl=en" target="_blank" class="fa fa-google-plus gp" title="google-plus"></a>
+						<a href="mailto:info@Acceligize.com" target="_blank" class="fa fa-envelope-o em" title="email"></a>
 					</div>
 				</div>
 			</div>
@@ -235,16 +235,16 @@
 				<nav class="grid-cell footer-nav">
 					<div>
 						<h4>Marketing Qualified Leads</h4>
-						<div><a href="#">Lead Generation & Content Dissemination</a></div>
-						<div><a href="#">Event Registration & Webinar Registration</a></div>
-						<div><a href="#">Account Profiling & Custom Intelligence</a></div>
-						<div><a href="#">Market Research Surveys</a></div>
+						<div><a href="services.html#mql">Lead Generation & Content Dissemination</a></div>
+						<div><a href="services.html#mql">Event Registration & Webinar Registration</a></div>
+						<div><a href="services.html#mql">Account Profiling & Custom Intelligence</a></div>
+						<div><a href="services.html#mql">Market Research Surveys</a></div>
 						<h4>Sales Qulified Leads</h4>
-						<div><a href="#">Appointment Setting & Lead Nurturing.</a></div>
-						<div><a href="#">Confirmed Callback Leads</a></div>
+						<div><a href="services.html#sql">Appointment Setting & Lead Nurturing.</a></div>
+						<div><a href="services.html#sql">Confirmed Callback Leads</a></div>
 						<h4>Supreme Data</h4>
-						<div><a href="#">Contact List & Verification</a></div>
-						<div><a href="#">CRM cleansing & Appends</a></div>
+						<div><a href="services.html#sd">Contact List & Verification</a></div>
+						<div><a href="services.html#sd">CRM cleansing & Appends</a></div>
 					</div>
 				</nav>
 				<div class="grid-cell address-box">
@@ -254,6 +254,10 @@
 						Old Mundhwa Road, Kharadi, <br>
 						Pune, Maharashtra - 411014 India
 					</p>
+					<p class="text">533 Airport Blvd. Suite 400 <br>
+						Burlingame CA 94010. <br>
+						United States.
+					</p>
 					<p class="text">
 						<b>Phone</b>: +1-844-295-2907<br>
 						<b>Email</b>: <a href="mailto:info@Acceligize.com">info@Acceligize.com</a>
@@ -261,8 +265,8 @@
 					<p class="text" style="padding-top:5px;">
 						<h3>Web Products</h3>
 						
-						<a href="www.techinfobridge.com" style="padding-bottom: 7px; display: block;">TechInfoBridge.com</a>
-						<a href="www.b2b-broadcast.com">B2B-Broadcast.com</a>
+						<a target="_blank" href="http://www.techinfobridge.com" style="padding-bottom: 7px; display: block;">TechInfoBridge.com</a>
+						<a target="_blank" href="http://www.b2b-broadcast.com">B2B-Broadcast.com</a>
 					</p>
 				</div>
 			</div>
@@ -270,8 +274,13 @@
 	</footer>
 		<div class="connect">
 			<div class="content-wrap tcenter">
+<<<<<<< HEAD
 				Copyright &copy and All rights reserved by Acceligize.com <br>
 				<div class="bottom hidden-for-submission">Designed by <a href="https://www.linkedin.com/profile/view?id=AAMAAA8hHaABpOGR677ylii2tNmPb9Mm1LnF6gI&trk">RahilLakhani</a></div>
+=======
+				Copyright &copy and All rights reserved by Acceligize.com | <a href="privacy.html">Privacy Policy</a><br>
+				<div class="bottom hidden-for-submission">Designed by <a href="#">RahilLakhani</a></div>
+>>>>>>> origin/master
 			</div>
 		</div>
 	<script type="text/javascript">
